@@ -1,0 +1,9 @@
+name: Sebastian Iglesias, Software Engineer
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: /blog/:year/:month/:day/:title
