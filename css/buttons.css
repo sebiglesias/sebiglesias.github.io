@@ -1,0 +1,15 @@
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.button-group > p > a {
+    margin-right: 10px;
+}
+
+.bi {
+    display: inline-block;
+    vertical-align: -.125em;
+}
