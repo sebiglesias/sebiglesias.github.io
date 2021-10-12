@@ -2,3 +2,12 @@
     position: absolute;
     top: 20%;
 }
+
+.title {
+    max-width: 450px;
+}
+
+.summary {
+    text-indent: 40px;
+    max-width: 450px;
+}
