@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 .centered {
     position: absolute;
     top: 20%;
