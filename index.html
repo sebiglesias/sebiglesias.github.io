@@ -12,48 +12,142 @@
 	<link rel="stylesheet" href="./css/buttons.css">
 	<link rel="stylesheet" href="./css/layout.css">
 </head>
-<body>
-	<section role="main" id="body-section" class="container-fluid d-flex flex-column justify-content-center align-items-center vertical-align-middle centered" itemscope itemtype="https://schema.org/Person">
-		<img itemprop="image" tabindex="0" id="face-image" class="rounded-circle img-thumbnail face-img" height="217px" width="200px" src="./img/me.jpg" alt="An image of Sebastian Iglesias smiling." />
-		<h1 tabindex="0" about="Main title" id="title" class="title">
-			Hi! I'm <em itemprop="name">Sebastián Iglesias</em>.
-		</h1>
-		<p tabindex="0" about="Summary" id="summary" class="summary">
-			I'm a <em itemprop="jobTitle">software engineer</em> from <span itemprop="nationality">Argentina</span>. <span itemprop="description">I consider myself a full-stack developer, I usually work in web development and backend services. I'm also interested in machine learning. You can check my Linkedin or Github to know more.</span>
-		</p>
-		<div tabindex="0" about="Links with information about my CV and work experience." id="link-group" class="button-group" role="group">
-			<p>
-				<a class="text-decoration-none" href="https://www.linkedin.com/in/sebiglesias">
-					Linkedin
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" role="img">
-						<title>Icon of Linkedin Logo.</title>
-						<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
-					</svg>
-				</a>
-			</p>
-
-			<p>
-				<a class="text-decoration-none" href="https://github.com/sebiglesias">
-					Github
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" role="img">
-						<title>Github Logo.</title>
-						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-					</svg>
-				</a>
-			</p>
-
-			<p>
-				<a class="text-decoration-none" href="/assets/cv.pdf" content="PDF link with curriculum vitae.">
-					CV
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16" role="img">
-						<title>Icon of a person representing a CV.</title>
-						<path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
-						<path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-					</svg>
-				</a>
-			</p>
+<body itemscope itemtype="https://schema.org/Person">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+		<div class="container px-5">
+			<a class="navbar-brand fw-bold" href="#aboutme">About Me</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="bi-list"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+					<li class="nav-item"><a class="nav-link me-lg-3" href="#resume">Résumé</a></li>
+					<li>
+						<a class="nav-link me-lg-3" href="https://www.linkedin.com/in/sebiglesias">
+							Linkedin
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" role="img">
+								<title>Icon of LinkedIn Logo.</title>
+								<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="nav-link me-lg-3" href="https://github.com/sebiglesias">
+							Github
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" role="img">
+								<title>Github Logo.</title>
+								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="nav-link me-lg-3" href="/assets/en/cv.pdf" content="PDF link with curriculum vitae in english.">
+							&#127468;&#127463;
+							CV
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link me-lg-3" href="/assets/es/cv.pdf" content="PDF link with curriculum vitae in spanish.">
+						&#127462;&#127479;
+						CV
+					</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-              
+	</nav>
+	<header class="header" id="aboutme">
+		<div class="container px-5">
+			<div class="row gx-5 align-items-center">
+				<div class="col-lg-6">
+					<div class="mb-5 mb-lg-0 text-center text-lg-start">
+						<h1 tabindex="0" about="Main title" id="title" class="title">
+							Hi! I'm <em itemprop="name">Sebastián Iglesias</em>.
+						</h1>
+						<p tabindex="0" about="Summary" id="summary" class="summary">
+							I'm a <em itemprop="jobTitle">senior software engineer</em> from <span itemprop="nationality">Argentina</span>. <span itemprop="description">I consider myself a full-stack developer, I usually work in web development and backend services. I'm also interested in machine learning. You can check my LinkedIn or GitHub to know more.</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="headerImage">
+						<img itemprop="image" tabindex="0" id="face-image" class="rounded-circle img-thumbnail face-img" height="258" width="237" src="./img/me.jpg" alt="An image of Sebastian Iglesias smiling." />
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section role="presentation" id="resume" class="container-fluid d-flex justify-content-center">
+		<div class="container">
+			<div class="resume-title">
+				<h2>Résumé</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+					<h3 class="resume-sub-title">Education</h3>
+					<div class="resume-item">
+						<h4>Postgraduate Course</h4>
+						<h5>2019 - 2020</h5>
+						<p>
+							<em>ITBA University</em>
+						</p>
+						<p>Data Science Specialization.</p>
+					</div>
+					<div class="resume-item">
+						<h4>Master's Degree</h4>
+						<h5>2014 - 2018</h5>
+						<p>
+							<em>Austral University</em>
+						</p>
+						<p>Software Engineering</p>
+					</div>
+				</div>
+				<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+					<h3 class="resume-sub-title">Work Experience</h3>
+					<div class="resume-item">
+						<h4>Senior Software Engineer (Sr)</h4>
+						<h5>Jul 2021 - Present</h5>
+						<p>
+							<em>MuleSoft, a Salesforce company.</em>
+						</p>
+						<p></p>
+					</div>
+					<div class="resume-item">
+						<h4>Software Engineer (Ssr)</h4>
+						<h5>Feb 2020 - Jul 2021</h5>
+						<p>
+							<em>MuleSoft, a Salesforce company.</em>
+						</p>
+						<p>Worked on Anypoint’s Datagraph in an engineering team following agile methodologies, developing front and back- end services. The product was developed from scratch and maintained in production later on.  In conjunction with my team, we developed REST Services using Java and Spring as well as web clients with React, Redux and Typescript. Developed integration tests using Testcafe.  Helped and provided guide for junior and intern employees.</p>
+					</div>
+					<div class="resume-item">
+						<h4>Associate Software Engineer (Jr)</h4>
+						<h5>Dec 2017 - Feb 2020</h5>
+						<p>
+							<em>MuleSoft.</em>
+						</p>
+						<p>Worked on the Monitoring Platform inside MuleSoft’s Any- point Platform in an engineering team following agile methodologies, developing front and backend services. The product was developed from scratch and maintained in production later on. In conjunction with my team, we developed REST Services using Scala, Akka and Java and several types of databases as well as web clients with React, Angular and Typescript. Which where deployed in the AWS cloud via tools such as Terraform, Salt, Spinnaker and Jenkins. For Monitoring purposes, I’ve worked with the Elasticsearch stack and set up scripts on Python and bash.</p>
+					</div>
+					<div class="resume-item">
+						<h4>Software Engineer Intern</h4>
+						<h5>May 2017 - Dec 2017</h5>
+						<p>
+							<em>MuleSoft.</em>
+						</p>
+						<p>Maintained a legacy VCS system and developed new fea- tures using Raml, Java, Junit, Spring Framework, Docker and Kubernetes.</p>
+					</div>
+					<div class="resume-item">
+						<h4>Software Engineer Intern</h4>
+						<h5>Apr 2016 - Dec 2016</h5>
+						<p>
+							<em>FINES.</em>
+						</p>
+						<p>Worked as a teacher in IT for an accelerated highschool course for adults under the FINES plan. I planned and gave night classes to both adults and teenagers.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- Bootstrap scripts -->
 	<script src="./js/bootstrap.js"></script>
