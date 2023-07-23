@@ -63,7 +63,7 @@
 				<div class="col-lg-6 bounce-in-left">
 					<div class="mb-5 mb-lg-0 text-center text-lg-start">
 						<h1 tabindex="0" about="Main title" id="title" class="title">
-							Hi! I'm <em itemprop="name">Sebastián Iglesias</em>.
+							Hi! I'm <em itemprop="name">Sebastián</em> <em itemprop="additionalName">Alejo</em> <em itemprop="familyName">Iglesias</em>.
 						</h1>
 					</div>
 				</div>
@@ -78,12 +78,12 @@
 	<section role="presentation" id="resume" class="container-fluid d-flex justify-content-center flex-column">
 		<div class="container py-5">
 			<div class="row">
-				<p tabindex="0" about="Summary" id="summary" class="lead text-muted col-lg-12">
-					I'm Sebastian Iglesias, a <em itemprop="jobTitle">software engineer</em> and <em itemprop="jobTitle">teacher</em> based in <span itemprop="nationality">Argentina</span>. <span itemprop="description">I've been working in the tech industry for over 6 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
+				<p tabindex="0" about="Summary" id="summary" class="lead text-muted col-lg-12" itemprop="description">
+					I'm <em itemprop="mainEntityOfPage">Sebastián Alejo Iglesias</em>, a <em itemprop="jobTitle">software engineer</em> and <em itemprop="jobTitle">teacher</em> based in <span itemprop="nationality workLocation">Argentina</span>, who speaks <em itemprop="knowsLanguage">English</em> and <em itemprop="knowsLanguage">Spanish</em>. <span itemprop="description">I've been working in the tech industry for over 6 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
 
 I'm passionate about building innovative and user-friendly software. I'm also a lifelong learner, and I'm always eager to learn new things. In my free time, I enjoy testing machine learning tools, 3D printing, ham radio, hydroponics, soccer, gaming, and traveling.
 
-My goal is to be happy with myself and with my work. I hope to one day start my own company, but I'm unsure as to what that company will do. For now, I'm focused on learning and growing as a software engineer.</span>
+<em itemprop="seeks">My goal is to be happy with myself and with my work. I hope to one day start my own company, but I'm unsure as to what that company will do.</em> For now, I'm focused on learning and growing as a software engineer.</span>
 				</p>
 			</div>
 		</div>
@@ -100,36 +100,36 @@ My goal is to be happy with myself and with my work. I hope to one day start my 
 						<h4>Postgraduate Course</h4>
 						<h5>2019 - 2020</h5>
 						<p>
-							<em>ITBA University</em>
+							<em itemprop="alumniOf">ITBA University</em>
 						</p>
-						<p>Data Science Specialization.</p>
+						<p itemprop="hasCredential">Data Science Specialization.</p>
 					</div>
 					<div class="resume-item">
 						<h4>Master's Degree</h4>
 						<h5>2014 - 2018</h5>
 						<p>
-							<em>Austral University</em>
+							<em itemprop="alumniOf">Austral University</em>
 						</p>
-						<p>Software Engineering</p>
+						<p itemprop="hasCredential">Software Engineering</p>
 					</div>
 				</div>
 				<div class="col-lg-6 aos-init aos-animate mb-5 bounce-in-right" data-aos="fade-up">
 					<h3 class="resume-sub-title">Work Experience</h3>
 					<div class="resume-item">
-						<h4>Associate Professor</h4>
+						<h4 itemprop="hasOccupation">Associate Professor</h4>
 						<h5>Feb 2023 - Now</h5>
 						<p>
-							<em>Universidad Austral</em>
+							<em itemprop="memberOf worksFor employee">Universidad Austral</em>
 						</p>
 						<p>
 							Preparing and giving classes and assignments to software engineer students. <em>Introduction to Programming 1 (1st-year students)</em>: Basic Python and programming principles, use of a standard POSIX terminal, git, and GitHub. <em>Laboratory I (3rd-year students)</em>: This course provides the fundamental knowledge required to develop a software project, covering all stages from conception to implementation and testing. Students work in groups and propose real-life software projects, using use case analysis to define requirements and create an implementation schedule. The course evaluates progress through two partial deliveries, where each group showcases their use case implementations using the developed software.
 						</p>
 					</div>
 					<div class="resume-item">
-						<h4>Software Engineer (Sr)</h4>
+						<h4 itemprop="hasOccupation">Software Engineer (Sr)</h4>
 						<h5>Jul 2022 - Currently working</h5>
 						<p>
-							<em>Caribou.</em>
+							<em itemprop="memberOf worksFor employee">Caribou.</em>
 						</p>
 						<p>
 							At Caribou, we are building healthcare cost prediction and optimization software for the finance industry. Financial advisors and wealth managers across the US are using our software for proactive healthcare planning, protecting their clients’ wealth and building stronger client relationships. Every feature we release or conversation we have fits our mission of creating a world where healthcare does not get in the way of living.
@@ -168,6 +168,14 @@ My goal is to be happy with myself and with my work. I hope to one day start my 
 						<p>Maintained a legacy VCS system and developed new features using Raml, Java, Junit, Spring Framework, Docker and Kubernetes.</p>
 					</div>
 					<div class="resume-item">
+						<h4>Founder Informatica Solidaria</h4>
+						<h5>Sep 2015 - Sep 2017</h5>
+						<p>
+							<em itemprop="foundedItem">Informatica Solidaria</em>
+						</p>
+						<p>Founded Informatica Solidaria, an organization that received old electronics, repaired and donated them to educational organizations in Pilar, Buenos Aires, Argentina.</p>
+					</div>
+					<div class="resume-item">
 						<h4>Software Engineer Intern</h4>
 						<h5>Apr 2016 - Dec 2016</h5>
 						<p>
@@ -181,6 +189,7 @@ My goal is to be happy with myself and with my work. I hope to one day start my 
 	</section>
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 px-4 border-top">
 		<p class="col-md-6 mb-0 text-muted">© 2023 Sebastian Iglesias</p>
+		<p class="col-md-6 mb-0 text-muted" itemprop="url">https://sebiglesias.com.ar</p>
 		<ul class="nav col-md-6 justify-content-end">
 			<li class="nav-item"><a class="nav-link text-muted" href="#resume">Résumé</a></li>
 			<li>
