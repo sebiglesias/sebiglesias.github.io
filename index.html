@@ -220,18 +220,6 @@ I'm passionate about building innovative and user-friendly software. I'm also a 
 	</footer>
 	<!-- Bootstrap scripts -->
 	<script src="./js/bootstrap.js"></script>
-	<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // Registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-</script>
+	<script src="./js/worker.js"></script>
 </body>
 </html> 
