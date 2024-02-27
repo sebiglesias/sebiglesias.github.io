@@ -10,6 +10,7 @@ const assetsToCache = [
     '/js/bootstrap.js',
     '/img/favicon.ico',
     '/img/me.jpg',
+    '/img/icon-512x512.png',
     '/assets/en/cv.pdf',
     '/assets/es/cv.pdf'
 ]
