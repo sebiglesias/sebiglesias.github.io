@@ -10,7 +10,13 @@ const assetsToCache = [
     '/js/bootstrap.js',
     '/img/favicon.ico',
     '/img/me.jpg',
-    '/img/icon-512x512.png',
+    '/img/maskable_icon_x512.png',
+    '/img/maskable_icon_x384.png',
+    '/img/maskable_icon_x192.png',
+    '/img/maskable_icon_x128.png',
+    '/img/maskable_icon_x96.png',
+    '/img/maskable_icon_x72.png',
+    '/img/maskable_icon_x48.png',
     '/assets/en/cv.pdf',
     '/assets/es/cv.pdf'
 ]
