@@ -1,21 +1,27 @@
-const CACHE_NAME = 'site-static-v1';
+const CACHE_NAME = 'site-static-v1'
 const assetsToCache = [
     '/',
     '/index.html',
-    '/css/bootstrap.min.css',
-    '/js/jquery.min.js',
-    '/images/logo.png',
-];
+    '/manifest.json',
+    '/css/bootstrap.css',
+    '/css/button.css',
+    '/css/img.css',
+    '/css/layout.css',
+    '/js/bootstrap.js',
+    '/img/favicon.ico',
+    '/img/me.jpg',
+    '/assets/en/cv.pdf',
+    '/assets/es/cv.pdf'
+]
 
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => {
-                console.log('Caching assets');
                 cache.addAll(assetsToCache);
             })
-    );
-});
+    )
+})
 
 self.addEventListener('fetch', event => {
     event.respondWith(
