@@ -145,6 +145,10 @@ nav {
     font-weight: bold;
 }
 
+.description {
+    font-weight: bold;
+}
+
 .name-container {
     display: block;
     margin-top: 0.5rem;
