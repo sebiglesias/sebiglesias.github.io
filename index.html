@@ -9,11 +9,13 @@
 	<title>Sebastian Iglesias Personal Site</title>
 	<link rel="manifest" href="/manifest.json">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="preload" href="./css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./css/bootstrap.css"></noscript>
 	<link rel="stylesheet" href="./css/img.css">
 	<link rel="stylesheet" href="./css/buttons.css">
 	<link rel="stylesheet" href="./css/layout.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></noscript>
 	<script data-goatcounter="https://xebox.goatcounter.com/count"
 			async src="//gc.zgo.at/count.js"></script>
 </head>
