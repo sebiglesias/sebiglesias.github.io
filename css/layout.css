@@ -147,12 +147,12 @@ nav {
 
 .title {
     max-width: 600px;
-    font-weight: bold;
 }
 
 .name-container {
     display: block;
     margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 #link-group > p {
