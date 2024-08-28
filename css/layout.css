@@ -8,7 +8,8 @@ body {
 }
 
 em { 
-    font-style: bold; 
+    font-weight: bold; 
+    font-style: normal;
 }
 
 .header {
