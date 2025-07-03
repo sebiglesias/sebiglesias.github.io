@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/siglesias
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sebiglesias.com.ar
+  * I am siglesias (https://keybase.io/siglesias) on keybase.
+  * I have a public key ASCbn0UvT3iTWdkFoGoWAJ7nRo6lxzDyo04oxHH1NJFJfgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b5aef934b864d3c736a697757c3f9f9aab8fc6951f67541411ef46d513a7c9400a",
+      "host": "keybase.io",
+      "kid": "01209b9f452f4f789359d905a06a16009ee7468ea5c730f2a34e28c471f53491497e0a",
+      "uid": "2c427186e6a5933a465c3d5167bb7b19",
+      "username": "siglesias"
+    },
+    "merkle_root": {
+      "ctime": 1751547013,
+      "hash": "8510ba8f88ae1a8f5e898b1cf79ecad5ded33c76173a891bbad681a0c86447a5da7d5002876ffcaf076c5259d7764f462d8ea4180acfef276e712e38daec1b10",
+      "hash_meta": "dcbcf7aa538ef54dfdaf0f112b94e9235ca8d08498647d2a627779e81ae5038b",
+      "seqno": 26917357
+    },
+    "service": {
+      "entropy": "TpoQ6v3alD/fPsf9wwWJ0MOb",
+      "hostname": "sebiglesias.com.ar",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1751547063,
+  "expire_in": 504576000,
+  "prev": "8ef69c494aac9eadcfc98f6e2e9495f5452a885da18435648defd4e1e7d47c5d",
+  "seqno": 60,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgm59FL094k1nZBaBqFgCe50aOpccw8qNOKMRx9TSRSX4Kp3BheWxvYWTESpcCPMQgjvacSUqsnq3PyY9uLpSV9UUqiF2hhDVkje/U4efUfF3EIJI+TjRh/bN7HOB/MTmevZLM1JRBWXJ1Vj9dmTos4oVmAgHCo3NpZ8RA1t88ZVeCJ87xfs2U6EA2taL6PvSD0CuDev5Yqsxy6v83ktdaNOb8wzCeQ6aWLFrT0GD+ckmzpNp1J4a8cPZ1AKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIF1mFWqjET/TtK5IkAQ7Fe6/vAPBIBxbJcVQ94MOMGNIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/siglesias
+
+==================================================================
