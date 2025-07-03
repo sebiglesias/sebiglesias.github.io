@@ -1,0 +1,197 @@
+/* Hobby Projects Section Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 95, 115, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 95, 115, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0a9396, #94d3a2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 95, 115, 0.15);
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #005f73;
+    margin-bottom: 0.5rem;
+}
+
+.project-year {
+    background: rgba(0, 95, 115, 0.1);
+    color: #005f73;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 95, 115, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 95, 115, 0.1);
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: rgba(0, 95, 115, 0.1);
+    color: #005f73;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 95, 115, 0.2);
+    transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(0, 95, 115, 0.15);
+    transform: translateY(-1px);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #005f73;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #005f73;
+}
+
+.project-link:hover {
+    background: #0a9396;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 95, 115, 0.3);
+    color: white;
+    text-decoration: none;
+    border-color: #0a9396;
+}
+
+.status-badge {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.status-active {
+    background: rgba(148, 211, 162, 0.2);
+    color: #2d6a4f;
+    border: 1px solid rgba(148, 211, 162, 0.4);
+}
+
+.status-disabled {
+    background: rgba(231, 111, 81, 0.2);
+    color: #d62828;
+    border: 1px solid rgba(231, 111, 81, 0.4);
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-link {
+        justify-content: center;
+    }
+}
