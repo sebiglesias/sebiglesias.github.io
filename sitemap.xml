@@ -9,17 +9,27 @@
 
 <url>
   <loc>https://sebiglesias.com.ar/</loc>
-  <lastmod>2024-12-04T19:37:19+00:00</lastmod>
+  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/assets/en/cv.pdf</loc>
-  <lastmod>2024-12-04T19:37:19+00:00</lastmod>
+  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/assets/es/cv.pdf</loc>
-  <lastmod>2024-12-04T19:37:19+00:00</lastmod>
+  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/sushi-piece-counter/</loc>
+  <lastmod>2025-06-22T15:13:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/empanadin/</loc>
+  <lastmod>2025-06-30T15:01:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
