@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Travel Map</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/travel.css" />
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo"><a href="https://sebiglesias.com.ar">← Back to Home</a></div>
+</nav>
+
+<header>
+    <h1>Countries I've Visited</h1>
+</header>
+
+<div class="info">
+    <p>This map shows countries I’ve been to. Click on a shaded country to see photos and notes about the trip. Countries not shaded haven’t been visited (yet!).</p>
+</div>
+
+<div id="map"></div>
+
+<!-- Modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-header" id="modalTitle">Country Name</div>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // === Map setup ===
+    const map = L.map('map').setView([20,0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // === Visited countries data ===
+    const visited = {
+        "argentina": {
+            title: "Argentina",
+            // images: [
+            //     { src: "../img/argentina1.jpg", note: "Buenos Aires - Obelisco at night." },
+            //     { src: "../img/argentina2.jpg", note: "Patagonia hiking trails." }
+            // ]
+        },
+        "brazil": {
+          title: "Brasil",
+        },
+        "chile": {
+          title: "Chile",
+          // images: []
+        },
+        "spain": {
+            title: "Spain",
+            // images: [
+            //     { src: "../img/spain1.jpg", note: "Barcelona – Sagrada Familia." },
+            //     { src: "../img/spain2.jpg", note: "Madrid – Plaza Mayor at sunset." }
+            // ]
+        },
+        "monaco": {
+          title: "Monaco",
+        },
+        "united kingdom": {
+            title: "United Kingdom",
+        },
+        "germany": {
+            title: "Germany",
+        },
+        "belgium": {
+            title: "Belgium",
+        },
+        "netherlands": {
+            title: "Netherlands",
+        },
+        "czech republic": {
+            title: "Czech republic",
+        },
+        "hungary": {
+            title: "Hungary",
+        },
+        "italy":{
+            title: "Italy",
+        },
+        "france": {
+            title: "France",
+        },
+        "dominican republic": {
+            title: "Dominican Republic",
+        },
+        "united states of america": {
+            title: "United States",
+        },
+        "japan": {
+            title: "Japan",
+            // images: [
+            //     { src: "../img/japan1.jpg", note: "Tokyo – Shibuya crossing." },
+            //     { src: "../img/japan2.jpg", note: "Kyoto – Fushimi Inari shrine." }
+            // ]
+        }
+    };
+
+    function normalizeName(n) { return n.trim().toLowerCase(); }
+
+    // Modal logic
+    const backdrop = document.getElementById('modalBackdrop');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    document.getElementById('modalClose').onclick = () => { backdrop.style.display = 'none'; };
+    backdrop.onclick = (e) => { if (e.target === backdrop) backdrop.style.display = 'none'; };
+
+    function openModal(countryKey) {
+        const info = visited[countryKey];
+        if (!info) return;
+        modalTitle.textContent = info.title;
+        modalContent.innerHTML = info.images.map(img =>
+            `<div class="modal-img-block">
+          <img src="${img.src}" alt="${info.title}">
+          <p>${img.note}</p>
+        </div>`
+        ).join("");
+        backdrop.style.display = 'flex';
+    }
+
+    // Load world GeoJSON
+    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
+        .then(res => res.json())
+        .then(world => {
+            L.geoJSON(world, {
+                style: feature => {
+                    const nm = normalizeName(feature.properties.name);
+                    if (visited[nm]) {
+                        return { color: "#444", weight: 1, fillColor: "#4CAF50", fillOpacity: 0.8 };
+                    }
+                    return { color: "#bbb", weight: 0.5, fillColor: "#f0f0f0", fillOpacity: 0.5 };
+                },
+                onEachFeature: (feature, layer) => {
+                    const nm = normalizeName(feature.properties.name);
+                    if (visited[nm]) {
+                        layer.on('click', () => openModal(nm));
+                    }
+                    layer.bindTooltip(feature.properties.name, {sticky: true});
+                }
+            }).addTo(map);
+        });
+</script>
+</body>
+</html>
