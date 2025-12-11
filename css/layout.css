@@ -71,6 +71,7 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
     color: black;
+    white-space: nowrap;
 }
 
 .navbar-toggler {
@@ -168,4 +169,21 @@ nav {
 
 .project-image:hover {
     transform: translateY(-5px);
+}
+
+/* Footer improvements */
+footer .nav {
+    flex-wrap: wrap;
+}
+
+footer .nav-link {
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Improve footer spacing on medium screens */
+@media (min-width: 768px) and (max-width: 1399px) {
+    footer.d-flex .nav.col-md-6 {
+        justify-content: center;
+    }
 }
