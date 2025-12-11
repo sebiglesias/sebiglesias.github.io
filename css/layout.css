@@ -183,7 +183,7 @@ footer .nav-link {
 
 /* Improve footer spacing on medium screens */
 @media (min-width: 768px) and (max-width: 1399px) {
-    footer .nav {
-        justify-content: center !important;
+    footer.d-flex .nav.col-md-6 {
+        justify-content: center;
     }
 }
