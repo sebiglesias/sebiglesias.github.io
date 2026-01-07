@@ -1,0 +1,308 @@
+# Sebastian Iglesias - Full Professional Profile
+
+## Personal Information
+
+**Name:** Sebastián Alejo Iglesias  
+**Title:** Software Engineer & Teacher  
+**Location:** Argentina  
+**Languages:** English, Spanish  
+**Nationality:** Argentinian
+
+**Website:** https://sebiglesias.com.ar  
+**LinkedIn:** https://www.linkedin.com/in/sebiglesias  
+**GitHub:** https://github.com/sebiglesias  
+**MakerWorld:** https://makerworld.com/es/@xebox  
+**Steam:** https://steamcommunity.com/profiles/76561198045124691/
+
+## Professional Summary
+
+I'm Sebastián Alejo Iglesias, a software engineer and teacher based in Argentina, who speaks English and Spanish. I've been working in the tech industry for over 8 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
+
+I'm passionate about building innovative and user-friendly software. I'm also a lifelong learner, and I'm always eager to learn new things. In my free time, I enjoy testing machine learning tools, 3D printing, ham radio, hydroponics, soccer, gaming, and traveling.
+
+My goal is to be happy with myself and with my work. I hope to one day start my own company, but I'm unsure as to what that company will do. For now, I'm focused on learning and growing as a software engineer.
+
+---
+
+## Work Experience
+
+### Senior Software Engineer
+**Allaria+** | Jun 2025 - Present  
+Website: https://www.allariamas.com.ar/
+
+Currently working as a Senior Software Engineer at Allaria+.
+
+---
+
+### Teaching Assistant
+**Universidad Austral** | Feb 2023 - Present  
+Website: https://www.austral.edu.ar/
+
+Preparing and giving classes and assignments to software engineer students:
+
+- **Introduction to Programming 1 (1st-year students):** Basic Python and programming principles, use of a standard POSIX terminal, git, and GitHub.
+- **Laboratory I & II (3rd-year students):** This course provides the fundamental knowledge required to develop a software project, covering all stages from conception to implementation and testing. Students work in groups and propose real-life software projects, using use case analysis to define requirements and create an implementation schedule. The course evaluates progress through two partial deliveries, where each group showcases their use case implementations using the developed software.
+
+---
+
+### Founding Software Engineer
+**Autonoma AI** | Mar 2025 - Jun 2025  
+Website: https://www.getautonoma.com/
+
+At Autonoma AI, I designed and implemented new AI-powered testing features that significantly improved customer outcomes. I leveraged GCP, Kubernetes, and microservices to build scalable infrastructure, using TypeScript for backend services and integrating OpenAI to enhance test generation and validation.
+
+---
+
+### Software Engineer (Sr)
+**Caribou** | Jul 2022 - Mar 2025  
+Website: https://www.caribouwealth.com/
+
+Designed, documented, led and developed numerous features spanning CI/CD pipelines, cloud services in GCP, front and backend tasks using React, Node.js, Typescript and Express (emphasizing a functional programming approach). Established and implemented various types of tests using Playwright to ensure product robustness. Worked closely with founders and clients to better understand their needs, to later define, lead a software development team and implement with them key product features, driving significant growth in our customer user base.
+
+---
+
+### Senior Software Engineer (Sr)
+**MuleSoft, a Salesforce company** | Jul 2021 - Jul 2022  
+Website: https://www.mulesoft.com/
+
+Worked on Mulesoft RPA development adapting a legacy codebase to the way of coding in MuleSoft. Worked with Java + Spring microservices that interacted with Postgresql Databases whose migrations where managed by Liquibase. Performed performance and functionality tests as well.
+
+---
+
+### Software Engineer (Ssr)
+**MuleSoft, a Salesforce company** | Feb 2020 - Jul 2021  
+Website: https://www.mulesoft.com/
+
+Worked on Anypoint's Datagraph in an engineering team following agile methodologies, developing front and backend services. The product was developed from scratch and maintained in production later on. In conjunction with my team, we developed REST Services using Java and Spring as well as web clients with React, Redux and Typescript. Developed integration tests using Testcafe. Helped and provided guide for junior and intern employees.
+
+---
+
+### Associate Software Engineer (Jr)
+**MuleSoft** | Dec 2017 - Feb 2020  
+Website: https://www.mulesoft.com/
+
+Worked on the Monitoring Platform inside MuleSoft's Anypoint Platform in an engineering team following agile methodologies, developing front and backend services. The product was developed from scratch and maintained in production later on. In conjunction with my team, we developed REST Services using Scala, Akka and Java and several types of databases as well as web clients with React, Angular and Typescript. Which where deployed in the AWS cloud via tools such as Terraform, Salt, Spinnaker and Jenkins. For Monitoring purposes, I've worked with the Elasticsearch stack and set up scripts on Python and bash.
+
+---
+
+### Software Engineer Intern
+**MuleSoft** | May 2017 - Dec 2017  
+Website: https://www.mulesoft.com/
+
+Maintained a legacy VCS system and developed new features using Raml, Java, Junit, Spring Framework, Docker and Kubernetes.
+
+---
+
+### Founder Informatica Solidaria
+**Informatica Solidaria** | Sep 2015 - Sep 2017  
+Website: https://www.facebook.com/InformaticaSolidaria/
+
+Founded Informatica Solidaria, an organization that received old electronics, repaired and donated them to educational organizations in Pilar, Buenos Aires, Argentina.
+
+---
+
+### IT Teacher
+**FINES** | Apr 2016 - Dec 2016  
+Website: https://www.argentina.gob.ar/educacion/fines/terminar-primaria-secundaria
+
+Worked as a teacher in IT for an accelerated high school course for adults under the FINES plan. I planned and gave night classes to both adults and teenagers.
+
+---
+
+## Education
+
+### Postgraduate Course - Data Science Specialization
+**ITBA University** | 2019 - 2020  
+Website: https://www.itba.edu.ar/
+
+Completed a postgraduate specialization in Data Science.
+
+---
+
+### Master's Degree - Software Engineering
+**Universidad Austral** | 2014 - 2018  
+Website: https://www.austral.edu.ar/
+
+Earned a Master's degree in Software Engineering.
+
+---
+
+## Technical Skills
+
+### Programming Languages
+- Java
+- Scala
+- TypeScript
+- JavaScript
+- Python
+- Bash
+
+### Frontend Technologies
+- React
+- Redux
+- Angular
+- Next.js
+- shadcn/ui
+- Tailwind CSS
+- HTML/CSS
+
+### Backend Technologies
+- Spring Framework
+- Node.js
+- Express
+- Akka
+- Java microservices
+
+### Databases
+- PostgreSQL
+- Elasticsearch
+- Various SQL and NoSQL databases
+
+### Cloud & DevOps
+- Google Cloud Platform (GCP)
+- Amazon Web Services (AWS)
+- Kubernetes
+- Docker
+- Terraform
+- Jenkins
+- Spinnaker
+- Salt
+- Nginx
+
+### Testing & Quality
+- Playwright
+- Testcafe
+- JUnit
+- Integration testing
+- End-to-end testing
+
+### Development Practices
+- CI/CD pipelines
+- Agile methodologies
+- Microservices architecture
+- Functional programming
+- REST API development
+- Version control (Git)
+- Code review
+- Test-driven development
+
+### Database Management
+- Liquibase (database migrations)
+- Database design and optimization
+- SQL query optimization
+
+### Other Technologies
+- OpenAI integration
+- Machine learning tools
+- RAML
+- Elasticsearch stack
+
+---
+
+## Hobby Projects
+
+### Juntadita
+**Year:** 2024  
+**Status:** Live  
+**Website:** https://juntadita.com.ar  
+**Technologies:** React, shadcn/ui, TypeScript, GitHub Pages
+
+Split expenses easily with Juntadita, the perfect app for managing shared costs. Simplify group finances with an intuitive interface designed for seamless expense tracking and settlement.
+
+---
+
+### MatchBuddy
+**Year:** 2025  
+**Status:** Disabled  
+**Demo:** https://www.youtube.com/watch?v=lqyBAS87iN8  
+**Technologies:** Next.js, React, Spring, Java, TypeScript, PostgreSQL, Nginx
+
+Organize matches, manage players, and generate balanced teams with ease. A comprehensive sports management platform designed to streamline team organization and player coordination.
+
+---
+
+### Sushi Piece Counter
+**Year:** 2024  
+**Status:** Live  
+**Website:** https://sebiglesias.com.ar/sushi-piece-counter  
+**Technologies:** Vanilla JavaScript, CSS, HTML, GitHub Pages
+
+A minimalist sushi piece counting tool for tracking your sushi consumption. Clean, simple, and effective - perfect for sushi lovers who want to keep track of their dining experience.
+
+---
+
+### Empanadin
+**Year:** 2025  
+**Status:** Live  
+**Website:** https://sebiglesias.com.ar/empanadin  
+**Technologies:** TypeScript, Next.js, Tailwind, GitHub Pages
+
+A simple empanada/dumpling organizer for tracking what to order with friends.
+
+---
+
+## Hobbies & Interests
+
+- **3D Printing:** Active creator on MakerWorld (@xebox)
+- **Ham Radio:** Amateur radio enthusiast
+- **Hydroponics:** Indoor gardening and plant cultivation
+- **Soccer:** Playing and watching
+- **Gaming:** Active gamer on Steam
+- **Travel:** Visited countries include Argentina, Brazil, Chile, Spain, Monaco, United Kingdom, Germany, Belgium, Netherlands, Czech Republic, Hungary, Italy, France, and Dominican Republic
+- **Machine Learning:** Testing and exploring ML tools
+- **Technology:** Continuous learning and experimentation
+
+---
+
+## Personal Philosophy & Goals
+
+My goal is to be happy with myself and with my work. I hope to one day start my own company, but I'm unsure as to what that company will do. For now, I'm focused on learning and growing as a software engineer.
+
+I'm passionate about:
+- Building innovative and user-friendly software
+- Lifelong learning and continuous improvement
+- Teaching and mentoring students
+- Contributing to meaningful projects
+- Exploring new technologies
+
+---
+
+## Additional Resources
+
+- **English Resume (PDF):** https://sebiglesias.com.ar/assets/en/cv.pdf
+- **Spanish CV (PDF):** https://sebiglesias.com.ar/assets/es/cv.pdf
+- **Travel Map:** https://sebiglesias.com.ar/travel/
+
+---
+
+## Countries Visited
+
+As documented on my travel map:
+- Argentina (home country)
+- Brazil
+- Chile
+- Spain
+- Monaco
+- United Kingdom
+- Germany
+- Belgium
+- Netherlands
+- Czech Republic
+- Hungary
+- Italy
+- France
+- Dominican Republic
+
+---
+
+## Contact Information
+
+For professional inquiries, please reach out via:
+- LinkedIn: https://www.linkedin.com/in/sebiglesias
+- GitHub: https://github.com/sebiglesias
+- Website: https://sebiglesias.com.ar
+
+---
+
+*Last updated: January 2026*
+*This document is optimized for LLM/AI indexing and search*
