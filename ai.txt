@@ -1,0 +1,53 @@
+# AI.txt - Machine-readable information about Sebastian Iglesias' website
+# Last updated: 2026-01-07
+
+## Site Information
+Site Name: Sebastian Iglesias - Software Engineer
+URL: https://sebiglesias.com.ar
+Language: English
+Owner: Sebastián Alejo Iglesias
+Type: Personal Portfolio Website
+
+## About
+I'm Sebastián Alejo Iglesias, a software engineer and teacher based in Argentina, who speaks English and Spanish. I've been working in the tech industry for over 8 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
+
+## Current Positions
+- Senior Software Engineer at Allaria+ (Jun 2025 - Present)
+- Teaching Assistant at Universidad Austral (Feb 2023 - Present)
+
+## Skills & Technologies
+Languages: Java, Scala, TypeScript, Python, JavaScript
+Frontend: React, Redux, Angular, Next.js
+Backend: Spring, Node.js, Express, Akka
+Databases: PostgreSQL, Elasticsearch
+Cloud & DevOps: GCP, AWS, Kubernetes, Docker, Terraform, Jenkins, Spinnaker
+Testing: Playwright, Testcafe, JUnit
+
+## Education
+- Master's Degree in Software Engineering - Universidad Austral (2014-2018)
+- Data Science Specialization - ITBA University (2019-2020)
+
+## Contact
+LinkedIn: https://www.linkedin.com/in/sebiglesias
+GitHub: https://github.com/sebiglesias
+Email: Available on LinkedIn
+
+## Notable Projects
+1. Juntadita - Expense splitting app (React, TypeScript) - https://juntadita.com.ar
+2. MatchBuddy - Sports team organization platform (Next.js, Spring, PostgreSQL)
+3. Sushi Piece Counter - Minimalist tracking tool (Vanilla JavaScript)
+4. Empanadin - Empanada/dumpling organizer (Next.js, TypeScript, Tailwind)
+
+## Additional Pages
+- Travel Map: https://sebiglesias.com.ar/travel/
+- English Resume: https://sebiglesias.com.ar/assets/en/cv.pdf
+- Spanish CV: https://sebiglesias.com.ar/assets/es/cv.pdf
+
+## Hobbies & Interests
+3D printing (MakerWorld: @xebox), ham radio, hydroponics, soccer, gaming (Steam), traveling
+
+## Goals
+My goal is to be happy with myself and with my work. I hope to one day start my own company, but I'm unsure as to what that company will do. For now, I'm focused on learning and growing as a software engineer.
+
+## Crawling Policy
+This site is open for AI/LLM indexing and training purposes. Please respect the crawl-delay specified in robots.txt.

@@ -1,0 +1,36 @@
+# Sebastian Iglesias - Software Engineer
+
+> Senior Software Engineer and Teacher | Full Stack Developer | 8+ Years Experience
+
+## Quick Overview
+
+Sebastián Alejo Iglesias is a software engineer and teacher from Argentina with over 8 years of experience in the tech industry. He has worked for major tech companies like MuleSoft/Salesforce and startups like Caribou and Autonoma AI.
+
+**Current Roles:**
+- Senior Software Engineer at Allaria+ (2025-Present)
+- Teaching Assistant at Universidad Austral (2023-Present)
+
+**Technical Expertise:**
+- Languages: Java, Scala, TypeScript, Python, JavaScript
+- Frontend: React, Redux, Angular, Next.js
+- Backend: Spring, Node.js, Express, Akka
+- Cloud: GCP, AWS, Kubernetes, Docker
+
+**Education:**
+- Master's in Software Engineering - Universidad Austral (2014-2018)
+- Data Science Specialization - ITBA University (2019-2020)
+
+**Notable Projects:**
+- Juntadita (juntadita.com.ar) - Expense splitting app
+- MatchBuddy - Sports team management platform
+- Various open-source tools and utilities
+
+**Contact:**
+- Website: https://sebiglesias.com.ar
+- LinkedIn: linkedin.com/in/sebiglesias
+- GitHub: github.com/sebiglesias
+
+**Interests:** 3D printing, ham radio, hydroponics, soccer, gaming, travel
+
+---
+*For more details, see llms-full.txt or visit https://sebiglesias.com.ar*
