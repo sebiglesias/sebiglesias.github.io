@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ar.com.sebiglesias.sushi",
+    "sha256_cert_fingerprints": [
+      "10:E1:71:0D:A1:59:FD:97:59:37:22:F0:DF:54:0D:FC:63:E7:12:28:5F:B9:F1:69:51:7D:38:52:C9:E7:64:53"
+    ]
+  }
+}]
