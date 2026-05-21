@@ -1,0 +1,163 @@
+/* ─── Mobile nav ordering: keep toggle in top bar, collapse below ─────────── */
+@media (max-width: 991.98px) {
+    .navbar-toggler { order: 1; }
+    #theme-toggle   { order: 2; margin-left: auto; }
+    .navbar-collapse { order: 3; }
+}
+
+/* ─── Theme toggle button ─────────────────────────────────────────────────── */
+.theme-toggle {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 0.35rem 0.55rem;
+    cursor: pointer;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.theme-toggle svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* ─── Dark mode overrides ─────────────────────────────────────────────────── */
+html[data-theme="dark"] body {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+html[data-theme="dark"] nav {
+    background-color: #161b22 !important;
+    border-bottom: 1px solid rgba(240, 246, 252, 0.08);
+}
+
+html[data-theme="dark"] .navbar-light .navbar-nav .nav-link,
+html[data-theme="dark"] .navbar-brand {
+    color: #e6edf3 !important;
+}
+
+html[data-theme="dark"] .navbar-toggler {
+    color: #e6edf3;
+    border-color: rgba(240, 246, 252, 0.25);
+}
+
+html[data-theme="dark"] .header {
+    background-color: #161b22;
+}
+
+html[data-theme="dark"] #resume {
+    background-color: #0d1117;
+}
+
+html[data-theme="dark"] .project-card {
+    background: rgba(33, 38, 45, 0.95);
+    border-color: rgba(0, 95, 115, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .project-card:hover {
+    background: rgba(33, 38, 45, 0.98);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .project-description {
+    color: #c9d1d9;
+}
+
+html[data-theme="dark"] .project-emoji {
+    background: rgba(0, 95, 115, 0.08);
+    border-color: rgba(0, 95, 115, 0.2);
+}
+
+html[data-theme="dark"] .resume-item {
+    border-left-color: #388bfd;
+}
+
+html[data-theme="dark"] .resume-item::before {
+    background: #0d1117;
+    border-color: #388bfd;
+}
+
+html[data-theme="dark"] .resume-item > h4 {
+    color: #c9d1d9;
+}
+
+html[data-theme="dark"] .resume-item > h5 {
+    background: #21262d;
+    color: #c9d1d9;
+}
+
+html[data-theme="dark"] .resume-sub-title {
+    color: #c9d1d9;
+}
+
+html[data-theme="dark"] footer {
+    border-top-color: rgba(240, 246, 252, 0.1) !important;
+}
+
+html[data-theme="dark"] footer .nav-link {
+    color: #8b949e !important;
+}
+
+html[data-theme="dark"] .theme-toggle {
+    border-color: rgba(240, 246, 252, 0.2);
+    color: #e6edf3;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Dark mode contrast fixes (WCAG AA) ─────────────────────────────────── */
+
+/* Body links: #0d6efd → 4.2:1 (fail). #58a6ff → ~8:1 (pass) */
+html[data-theme="dark"] a {
+    color: #58a6ff;
+}
+html[data-theme="dark"] a:hover {
+    color: #79c0ff;
+}
+/* Preserve button and nav link colors */
+html[data-theme="dark"] .project-link,
+html[data-theme="dark"] .project-link:hover {
+    color: #ffffff;
+}
+
+/* Project titles: #005f73 → ~2.5:1 (fail). #22d3ee → ~10:1 (pass) */
+html[data-theme="dark"] .project-title {
+    color: #22d3ee;
+}
+
+/* Tech tags and year badges: same issue */
+html[data-theme="dark"] .tech-tag {
+    background: rgba(34, 211, 238, 0.1);
+    color: #22d3ee;
+    border-color: rgba(34, 211, 238, 0.25);
+}
+html[data-theme="dark"] .project-year {
+    background: rgba(34, 211, 238, 0.1);
+    color: #22d3ee;
+    border-color: rgba(34, 211, 238, 0.25);
+}
+
+/* Status badges: dark green/red text on dark bg → ~1.5:1 (fail) */
+html[data-theme="dark"] .status-active {
+    background: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
+    border-color: rgba(63, 185, 80, 0.35);
+}
+html[data-theme="dark"] .status-disabled {
+    background: rgba(255, 123, 114, 0.15);
+    color: #ff7b72;
+    border-color: rgba(255, 123, 114, 0.35);
+}
