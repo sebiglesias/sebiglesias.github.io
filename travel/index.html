@@ -1,12 +1,427 @@
-    "japan": {
-        title: "Japan"
-    },
-    "thailand": {
-        title: "Thailand"
-    },
-    "vietnam": {
-        title: "Vietnam"
-    },
-    "singapore": {
-        title: "Singapore"
-    },
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Travel — Sebastian Iglesias</title>
+    <script>!function(){var t=localStorage.getItem('theme-preference')||'system';document.documentElement.dataset.theme=t==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;}();</script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/travel.css" />
+</head>
+<body>
+
+<nav class="travel-nav">
+    <a class="nav-back" href="https://sebiglesias.com.ar">&#8592; Back to Home</a>
+    <button id="theme-toggle" class="theme-toggle" onclick="window.__themeToggle()" title="System theme — click to cycle" aria-label="Current theme: System. Click to change.">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q.168.591.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q5.832 12.591 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.46 1.46 0 0 0 1 4v6c0 .325.078.502.145.602.07.105.17.188.302.254a1.46 1.46 0 0 0 .538.143L2.5 11h11l.515-.001a1.46 1.46 0 0 0 .538-.143.76.76 0 0 0 .302-.254A1.46 1.46 0 0 0 15 10V4a1.46 1.46 0 0 0-.145-.602.76.76 0 0 0-.302-.254 1.46 1.46 0 0 0-.538-.143L13.5 3h-11l-.515.001a1.46 1.46 0 0 0-.538.143z"/></svg>
+    </button>
+</nav>
+
+<header class="page-header">
+    <h1>Countries I've Visited</h1>
+    <p class="header-subtitle">19 countries &middot; 4 continents</p>
+</header>
+
+<main class="page-content">
+
+    <div id="map"></div>
+
+    <section class="countries-section">
+        <h2 class="section-title">All Countries</h2>
+        <div class="countries-grid">
+
+            <!-- Argentina -->
+            <article class="country-card" id="card-argentina">
+                <span class="country-flag">&#127462;&#127479;</span>
+                <h3 class="country-name">Argentina</h3>
+                <span class="country-region">South America</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/argentina/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/argentina/1.jpg" alt="Argentina" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../img/travel/argentina/2.jpg" alt="Argentina" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Belgium -->
+            <article class="country-card" id="card-belgium">
+                <span class="country-flag">&#127463;&#127466;</span>
+                <h3 class="country-name">Belgium</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/belgium/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/belgium/1.jpg" alt="Belgium" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Brazil -->
+            <article class="country-card" id="card-brazil">
+                <span class="country-flag">&#127463;&#127479;</span>
+                <h3 class="country-name">Brazil</h3>
+                <span class="country-region">South America</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/brazil/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/brazil/1.jpg" alt="Brazil" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Chile -->
+            <article class="country-card" id="card-chile">
+                <span class="country-flag">&#127464;&#127473;</span>
+                <h3 class="country-name">Chile</h3>
+                <span class="country-region">South America</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/chile/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/chile/1.jpg" alt="Chile" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Czech Republic -->
+            <article class="country-card" id="card-czech-republic">
+                <span class="country-flag">&#127464;&#127487;</span>
+                <h3 class="country-name">Czech Republic</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/czech-republic/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/czech-republic/1.jpg" alt="Czech Republic" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Dominican Republic -->
+            <article class="country-card" id="card-dominican-republic">
+                <span class="country-flag">&#127465;&#127476;</span>
+                <h3 class="country-name">Dominican Republic</h3>
+                <span class="country-region">Caribbean</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/dominican-republic/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/dominican-republic/1.jpg" alt="Dominican Republic" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- France -->
+            <article class="country-card" id="card-france">
+                <span class="country-flag">&#127467;&#127479;</span>
+                <h3 class="country-name">France</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/france/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/france/1.jpg" alt="France" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Germany -->
+            <article class="country-card" id="card-germany">
+                <span class="country-flag">&#127465;&#127466;</span>
+                <h3 class="country-name">Germany</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/germany/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/germany/1.jpg" alt="Germany" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Hungary -->
+            <article class="country-card" id="card-hungary">
+                <span class="country-flag">&#127469;&#127482;</span>
+                <h3 class="country-name">Hungary</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/hungary/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/hungary/1.jpg" alt="Hungary" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Italy -->
+            <article class="country-card" id="card-italy">
+                <span class="country-flag">&#127470;&#127481;</span>
+                <h3 class="country-name">Italy</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/italy/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/italy/1.jpg" alt="Italy" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Japan -->
+            <article class="country-card" id="card-japan">
+                <span class="country-flag">&#127471;&#127477;</span>
+                <h3 class="country-name">Japan</h3>
+                <span class="country-region">Asia</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/japan/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/japan/1.jpg" alt="Japan" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../img/travel/japan/2.jpg" alt="Japan" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Monaco -->
+            <article class="country-card" id="card-monaco">
+                <span class="country-flag">&#127474;&#127464;</span>
+                <h3 class="country-name">Monaco</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/monaco/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/monaco/1.jpg" alt="Monaco" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Netherlands -->
+            <article class="country-card" id="card-netherlands">
+                <span class="country-flag">&#127475;&#127473;</span>
+                <h3 class="country-name">Netherlands</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/netherlands/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/netherlands/1.jpg" alt="Netherlands" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Singapore -->
+            <article class="country-card" id="card-singapore">
+                <span class="country-flag">&#127480;&#127468;</span>
+                <h3 class="country-name">Singapore</h3>
+                <span class="country-region">Asia</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/singapore/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/singapore/1.jpg" alt="Singapore" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Spain -->
+            <article class="country-card" id="card-spain">
+                <span class="country-flag">&#127466;&#127480;</span>
+                <h3 class="country-name">Spain</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/spain/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/spain/1.jpg" alt="Spain" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../img/travel/spain/2.jpg" alt="Spain" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Thailand -->
+            <article class="country-card" id="card-thailand">
+                <span class="country-flag">&#127481;&#127469;</span>
+                <h3 class="country-name">Thailand</h3>
+                <span class="country-region">Asia</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/thailand/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/thailand/1.jpg" alt="Thailand" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- United Kingdom -->
+            <article class="country-card" id="card-united-kingdom">
+                <span class="country-flag">&#127468;&#127463;</span>
+                <h3 class="country-name">United Kingdom</h3>
+                <span class="country-region">Europe</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/united-kingdom/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/united-kingdom/1.jpg" alt="United Kingdom" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- United States -->
+            <article class="country-card" id="card-united-states-of-america">
+                <span class="country-flag">&#127482;&#127480;</span>
+                <h3 class="country-name">United States</h3>
+                <span class="country-region">North America</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/united-states/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/united-states/1.jpg" alt="United States" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+            <!-- Vietnam -->
+            <article class="country-card" id="card-vietnam">
+                <span class="country-flag">&#127483;&#127475;</span>
+                <h3 class="country-name">Vietnam</h3>
+                <span class="country-region">Asia</span>
+                <!--
+                PHOTOS — file convention: ../img/travel/vietnam/1.jpg, 2.jpg, …
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../img/travel/vietnam/1.jpg" alt="Vietnam" loading="lazy">
+                        <figcaption>Caption here</figcaption>
+                    </figure>
+                </div>
+                -->
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../js/theme.js"></script>
+<script>
+    const map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const visited = {
+        "argentina":                { title: "Argentina" },
+        "belgium":                  { title: "Belgium" },
+        "brazil":                   { title: "Brazil" },
+        "chile":                    { title: "Chile" },
+        "czech republic":           { title: "Czech Republic" },
+        "dominican republic":       { title: "Dominican Republic" },
+        "france":                   { title: "France" },
+        "germany":                  { title: "Germany" },
+        "hungary":                  { title: "Hungary" },
+        "italy":                    { title: "Italy" },
+        "japan":                    { title: "Japan" },
+        "monaco":                   { title: "Monaco" },
+        "netherlands":              { title: "Netherlands" },
+        "singapore":                { title: "Singapore" },
+        "spain":                    { title: "Spain" },
+        "thailand":                 { title: "Thailand" },
+        "united kingdom":           { title: "United Kingdom" },
+        "united states of america": { title: "United States" },
+        "vietnam":                  { title: "Vietnam" },
+    };
+
+    const nameAliases = {
+        "czechia":   "czech republic",
+        "viet nam":  "vietnam",
+    };
+
+    function normalizeName(n) {
+        const lower = n.trim().toLowerCase();
+        return nameAliases[lower] || lower;
+    }
+
+    function scrollToCard(key) {
+        const cardId = 'card-' + key.replace(/ /g, '-');
+        const card = document.getElementById(cardId);
+        if (!card) return;
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        card.classList.add('highlight');
+        setTimeout(() => card.classList.remove('highlight'), 2000);
+    }
+
+    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
+        .then(res => res.json())
+        .then(world => {
+            L.geoJSON(world, {
+                style: feature => {
+                    const nm = normalizeName(feature.properties.name);
+                    return visited[nm]
+                        ? { color: "#005f73", weight: 1.5, fillColor: "#005f73", fillOpacity: 0.65 }
+                        : { color: "#ccc",    weight: 0.5, fillColor: "#e9ecef", fillOpacity: 0.5 };
+                },
+                onEachFeature: (feature, layer) => {
+                    const nm = normalizeName(feature.properties.name);
+                    if (visited[nm]) {
+                        layer.on('click', () => scrollToCard(nm));
+                    }
+                    layer.bindTooltip(feature.properties.name, { sticky: true });
+                }
+            }).addTo(map);
+        });
+</script>
+</body>
+</html>
