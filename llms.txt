@@ -32,5 +32,7 @@ Sebastián Alejo Iglesias is a software engineer and teacher from Argentina with
 
 **Interests:** 3D printing, ham radio, hydroponics, soccer, gaming, travel
 
+**Localized:** Spanish version available at https://sebiglesias.com.ar/es/
+
 ---
 *For more details, see llms-full.txt or visit https://sebiglesias.com.ar*

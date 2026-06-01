@@ -47,6 +47,27 @@ body {
 .theme-toggle:hover { background: rgba(0, 0, 0, 0.06); }
 .theme-toggle svg { width: 16px; height: 16px; display: block; }
 
+/* Language switcher */
+.travel-nav .lang-switch {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #005f73;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    margin-right: 0.5rem;
+    transition: background 0.15s ease;
+}
+.travel-nav .lang-switch:hover { background: rgba(0, 0, 0, 0.06); }
+html[data-theme="dark"] .travel-nav .lang-switch {
+    color: #22d3ee;
+    border-color: rgba(240, 246, 252, 0.2);
+}
+html[data-theme="dark"] .travel-nav .lang-switch:hover { background: rgba(255, 255, 255, 0.08); }
+
 /* ── Page header ────────────────────────────────────────────────────────── */
 .page-header {
     text-align: center;

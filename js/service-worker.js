@@ -2,6 +2,7 @@ const CACHE_NAME = 'site-static-v1'
 const assetsToCache = [
     '/',
     '/index.html',
+    '/es/index.html',
     '/manifest.json',
     '/css/bootstrap.css',
     '/css/button.css',

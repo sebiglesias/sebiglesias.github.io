@@ -171,6 +171,24 @@ nav {
     transform: translateY(-5px);
 }
 
+/* Language switcher */
+.lang-switch {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 0.5rem;
+}
+
+.lang-switch .nav-link {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 0.4rem;
+}
+
+html[data-theme="dark"] .lang-switch {
+    border-left-color: rgba(240, 246, 252, 0.2);
+}
+
 /* Footer improvements */
 footer .nav {
     flex-wrap: wrap;

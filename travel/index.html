@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark">
     <title>Travel — Sebastian Iglesias</title>
     <script>!function(){var t=localStorage.getItem('theme-preference')||'system';document.documentElement.dataset.theme=t==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;}();</script>
+    <link rel="alternate" hreflang="en" href="https://sebiglesias.com.ar/" />
+    <link rel="alternate" hreflang="es" href="https://sebiglesias.com.ar/es/" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +18,7 @@
 
 <nav class="travel-nav">
     <a class="nav-back" href="https://sebiglesias.com.ar">&#8592; Back to Home</a>
+    <a class="lang-switch" href="/es/" lang="es" aria-label="Cambiar a español">ES</a>
     <button id="theme-toggle" class="theme-toggle" onclick="window.__themeToggle()" title="System theme — click to cycle" aria-label="Current theme: System. Click to change.">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q.168.591.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q5.832 12.591 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.46 1.46 0 0 0 1 4v6c0 .325.078.502.145.602.07.105.17.188.302.254a1.46 1.46 0 0 0 .538.143L2.5 11h11l.515-.001a1.46 1.46 0 0 0 .538-.143.76.76 0 0 0 .302-.254A1.46 1.46 0 0 0 15 10V4a1.46 1.46 0 0 0-.145-.602.76.76 0 0 0-.302-.254 1.46 1.46 0 0 0-.538-.143L13.5 3h-11l-.515.001a1.46 1.46 0 0 0-.538.143z"/></svg>
     </button>
