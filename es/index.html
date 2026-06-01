@@ -10,7 +10,7 @@
 	<title>Sebastian Iglesias — Ingeniero de Software</title>
 	<link rel="manifest" href="/manifest.json">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="preload" href="/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="/css/bootstrap-replacement.css">
 	<link rel="canonical" href="https://sebiglesias.com.ar/es/" />
 	<link rel="alternate" type="text/plain" href="/ai.txt" title="AI/LLM structured metadata" />
 	<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary" />
@@ -18,7 +18,7 @@
 	<link rel="alternate" hreflang="en" href="https://sebiglesias.com.ar/" />
 	<link rel="alternate" hreflang="es" href="https://sebiglesias.com.ar/es/" />
 	<link rel="alternate" hreflang="x-default" href="https://sebiglesias.com.ar/" />
-	<noscript><link rel="stylesheet" href="/css/bootstrap.css"></noscript>
+	<noscript><link rel="stylesheet" href="/css/bootstrap-replacement.css"></noscript>
 	<link rel="stylesheet" href="/css/img.css">
 	<link rel="stylesheet" href="/css/buttons.css">
 	<link rel="stylesheet" href="/css/layout.css">
@@ -46,9 +46,12 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
 	<div class="container px-5">
 
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Abrir menú de navegación">
+		<button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Abrir menú de navegación">
 			Menú
-			<i class="bi-list"></i>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16" role="img">
+				<title>Icono de menú hamburguesa.</title>
+				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			</svg>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<a class="navbar-brand fw-bold" href="#aboutme">Sebastian Iglesias</a>
@@ -547,7 +550,7 @@
 	</ul>
 	<a class="nav-link text-muted small mt-1" itemprop="URL" href="https://sebiglesias.com.ar">https://sebiglesias.com.ar</a>
 </footer>
-<script src="/js/bootstrap.js"></script>
+<script src="/js/nav.js"></script>
 <script src="/js/worker.js"></script>
 <script src="/js/theme.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190"
