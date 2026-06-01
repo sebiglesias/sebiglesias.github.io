@@ -122,6 +122,7 @@
   padding: 0.5rem 0;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.55);
+  line-height: 1.5;
 }
 
 .nav-link:hover { color: rgba(0, 0, 0, 0.7); }
@@ -150,9 +151,9 @@
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg { flex-wrap: nowrap; }
-  .navbar-expand-lg .navbar-collapse { display: flex !important; flex-basis: auto; }
-  .navbar-expand-lg .navbar-nav { flex-direction: row; }
+  .navbar-expand-lg { flex-wrap: nowrap; display: flex; align-items: center; }
+  .navbar-expand-lg .navbar-collapse { display: flex !important; flex-basis: auto; align-items: center; }
+  .navbar-expand-lg .navbar-nav { flex-direction: row; align-items: center; }
   .navbar-expand-lg .nav-link { padding-right: 0.5rem; padding-left: 0.5rem; }
   .navbar-expand-lg .navbar-toggler { display: none; }
 }
