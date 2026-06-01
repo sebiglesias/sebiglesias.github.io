@@ -29,6 +29,11 @@
   margin-left: -0.75rem;
 }
 
+.row > * {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
 .gx-5 {
   --bs-gutter-x: 3rem;
   margin-right: calc(-1 * var(--bs-gutter-x) / 2);
