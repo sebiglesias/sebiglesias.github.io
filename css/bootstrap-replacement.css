@@ -168,6 +168,10 @@ ul { margin-top: 0; margin-bottom: 1rem; }
   .navbar-expand-lg .navbar-toggler { display: none; }
 }
 
+/* ─── Section backgrounds ────────────────────────────────────────────────── */
+
+.section-alt { background-color: #f8f9fa; }
+
 /* ─── Spacing ────────────────────────────────────────────────────────────── */
 
 .px-5 { padding-right: 3rem; padding-left: 3rem; }
