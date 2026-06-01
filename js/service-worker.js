@@ -10,6 +10,7 @@ const assetsToCache = [
     '/css/layout.css',
     '/js/bootstrap.js',
     '/img/favicon.ico',
+    '/img/sushi.webp',
     '/img/me.jpg',
     '/img/maskable_icon_x512.png',
     '/img/maskable_icon_x384.png',

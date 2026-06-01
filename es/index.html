@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="/css/buttons.css">
 	<link rel="stylesheet" href="/css/layout.css">
 	<link rel="stylesheet" href="/css/hobby.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></noscript>
 	<link rel="stylesheet" href="/css/theme.css">
@@ -372,7 +374,10 @@
 						</div>
 					</div>
 
-					<img src="/img/sushi.png" alt="Captura de pantalla de la aplicación Sushi Piece Counter" class="project-image">
+					<picture>
+					<source srcset="/img/sushi.webp" type="image/webp">
+					<img src="/img/sushi.png" alt="Captura de pantalla de la aplicación Sushi Piece Counter" class="project-image" loading="lazy" width="512" height="512">
+				</picture>
 
 					<p class="project-description">
 						Una herramienta minimalista para contar piezas de sushi y registrar tu consumo. Simple, limpia y efectiva — perfecta para los amantes del sushi que quieren llevar la cuenta.
