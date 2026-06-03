@@ -13,7 +13,6 @@
     padding: 2rem;
     border: 1px solid rgba(0, 95, 115, 0.1);
     box-shadow: 0 8px 32px rgba(0, 95, 115, 0.1);
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -27,7 +26,6 @@
     height: 4px;
     background: linear-gradient(90deg, #005f73, #0a9396, #94d3a2);
     transform: scaleX(0);
-    transition: transform 0.3s ease;
 }
 
 .project-card:hover::before {
@@ -70,7 +68,6 @@
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 1.5rem;
-    transition: transform 0.3s ease;
     border: 2px solid rgba(0, 95, 115, 0.1);
 }
 
@@ -100,7 +97,6 @@
     font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid rgba(0, 95, 115, 0.2);
-    transition: all 0.2s ease;
 }
 
 .tech-tag:hover {
@@ -124,7 +120,6 @@
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
     border: 1px solid #005f73;
 }
 
@@ -209,7 +204,6 @@
     background: rgba(0, 95, 115, 0.05);
     border-radius: 12px;
     border: 2px solid rgba(0, 95, 115, 0.1);
-    transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-emoji {
