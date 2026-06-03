@@ -10,7 +10,75 @@
 	<title>Sebastian Iglesias a Software Engineer Personal Site</title>
 	<link rel="manifest" href="/manifest.json">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="stylesheet" href="./css/bootstrap-replacement.css">
+	<style>
+		*,*::before,*::after{box-sizing:border-box}
+		body{margin:0;font-family:'Montserrat',sans-serif;min-height:100vh}
+		html{scroll-behavior:smooth}
+		h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
+		p{margin-top:0;margin-bottom:1rem}
+		a{color:#0b5ed7;text-decoration:underline}
+		ul{margin-top:0;margin-bottom:1rem}
+		em{font-weight:700;font-style:normal}
+		.lead{font-size:1.25rem;font-weight:300}
+		.fw-bold{font-weight:700}
+		.container{width:100%;padding-right:.75rem;padding-left:.75rem;margin-right:auto;margin-left:auto}
+		@media(min-width:576px){.container{max-width:540px}}
+		@media(min-width:768px){.container{max-width:720px}}
+		@media(min-width:992px){.container{max-width:960px}}
+		@media(min-width:1200px){.container{max-width:1140px}}
+		@media(min-width:1400px){.container{max-width:1320px}}
+		.row{display:flex;flex-wrap:wrap;margin-right:-.75rem;margin-left:-.75rem}
+		.row>*{padding-right:.75rem;padding-left:.75rem}
+		.gx-5{--bs-gutter-x:3rem;margin-right:calc(-1*var(--bs-gutter-x)/2);margin-left:calc(-1*var(--bs-gutter-x)/2)}
+		.gx-5>.col-lg-6,.gx-5>.col-lg-10,.gx-5>.col-lg-12{padding-right:calc(var(--bs-gutter-x)/2);padding-left:calc(var(--bs-gutter-x)/2)}
+		.col-lg-6{flex:0 0 50%;max-width:50%}
+		@media(max-width:991.98px){.col-lg-6{flex:0 0 100%;max-width:100%}}
+		.col-lg-10{flex:0 0 83.33333333%;max-width:83.33333333%}
+		.col-lg-12{flex:0 0 100%;max-width:100%}
+		.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}
+		.shadow-sm{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)}
+		.navbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;position:relative;padding:.5rem 1rem}
+		.navbar .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}
+		.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;font-size:1.25rem;line-height:inherit;white-space:nowrap;text-decoration:none;color:rgba(0,0,0,.9)}
+		.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}
+		.nav-link{display:block;padding:.5rem 0;text-decoration:none;color:rgba(0,0,0,.55);line-height:1.5}
+		.navbar-light .navbar-nav .nav-link{color:#000;white-space:nowrap}
+		.navbar-toggler{display:flex;align-items:center;padding:.25rem .75rem;font-size:.875rem;line-height:1;background:none;border:1px solid rgba(0,0,0,.1);border-radius:.25rem;color:rgba(0,0,0,.55);cursor:pointer}
+		.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}
+		nav{padding-top:1rem;padding-bottom:1rem;background-color:#fff}
+		@media(max-width:991.98px){.navbar-toggler{order:1}#theme-toggle{order:2;margin-left:auto}.navbar-collapse{order:3}.navbar-collapse.collapse:not(.show){display:none}}
+		@media(min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;display:flex;align-items:center}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto;align-items:center}.navbar-expand-lg .navbar-nav{flex-direction:row;align-items:center}.navbar-expand-lg .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg .navbar-toggler{display:none}.my-lg-0{margin-top:0;margin-bottom:0}}
+		.header{background-color:#f8f9fa;padding-top:9.5rem;padding-bottom:5rem}
+		.headerImage{display:flex;align-items:center;justify-content:center;position:relative}
+		.face-img{max-width:200px;transition:transform .3s ease}
+		.rounded-circle{border-radius:50%}
+		.img-thumbnail{padding:.25rem;background-color:#fff;border:1px solid #dee2e6;border-radius:.25rem;max-width:100%;height:auto}
+		.title{max-width:600px}
+		.name-container{display:block;margin-top:.5rem;font-weight:700}
+		.section-alt{background-color:#f8f9fa}
+		.theme-toggle{background:none;border:1px solid rgba(0,0,0,.15);border-radius:6px;padding:.35rem .55rem;cursor:pointer;color:inherit;display:flex;align-items:center;line-height:1;flex-shrink:0}
+		.theme-toggle svg{width:16px;height:16px;display:block}
+		.bi{display:inline-block;vertical-align:-.125em}
+		.px-5{padding-right:3rem;padding-left:3rem}
+		.mb-5{margin-bottom:3rem}
+		.me-lg-3{margin-right:1rem}
+		.ms-2{margin-left:.5rem}
+		.ms-auto{margin-left:auto}
+		.d-flex{display:flex}
+		.align-items-center{align-items:center}
+		.justify-content-center{justify-content:center}
+		.text-center{text-align:center}
+		.nav-item{list-style:none}
+		.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}
+		.skip-link{position:absolute;top:-100%;left:0;z-index:9999;padding:.5rem 1rem;background:#005f73;color:#fff;text-decoration:none;font-weight:700}
+		.skip-link:focus{top:0;color:#fff}
+		html[data-theme="dark"] body{background-color:#0d1117;color:#e6edf3}
+		html[data-theme="dark"] nav{background-color:#161b22!important}
+		html[data-theme="dark"] .navbar-light .navbar-nav .nav-link,html[data-theme="dark"] .navbar-brand{color:#e6edf3!important}
+		html[data-theme="dark"] .header{background-color:#161b22}
+		html[data-theme="dark"] .section-alt{background-color:#0d1117}
+		html[data-theme="dark"] a{color:#58a6ff}
+	</style>
 	<link rel="canonical" href="https://sebiglesias.com.ar" />
 	<link rel="alternate" hreflang="en" href="https://sebiglesias.com.ar/" />
 	<link rel="alternate" hreflang="es" href="https://sebiglesias.com.ar/es/" />
@@ -18,14 +86,22 @@
 	<link rel="alternate" type="text/plain" href="/ai.txt" title="AI/LLM structured metadata" />
 	<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary" />
 	<link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM-friendly full profile" />
-	<noscript><link rel="stylesheet" href="./css/bootstrap-replacement.css"></noscript>
-	<link rel="stylesheet" href="./css/img.css">
-	<link rel="stylesheet" href="./css/buttons.css">
-	<link rel="stylesheet" href="./css/layout.css">
-	<link rel="stylesheet" href="./css/hobby.css">
+	<link rel="stylesheet" href="./css/bootstrap-replacement.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="./css/img.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="./css/buttons.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="./css/layout.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="./css/hobby.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="./css/theme.css" media="print" onload="this.media='all'">
+	<noscript>
+		<link rel="stylesheet" href="./css/bootstrap-replacement.css">
+		<link rel="stylesheet" href="./css/img.css">
+		<link rel="stylesheet" href="./css/buttons.css">
+		<link rel="stylesheet" href="./css/layout.css">
+		<link rel="stylesheet" href="./css/hobby.css">
+		<link rel="stylesheet" href="./css/theme.css">
+	</noscript>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<style>@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype')}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype')}</style>
-	<link rel="stylesheet" href="./css/theme.css">
 	<script>!function(){var t=localStorage.getItem('theme-preference')||'system';document.documentElement.dataset.theme=t==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;}();</script>
 	<script data-goatcounter="https://xebox.goatcounter.com/count"
 			async src="//gc.zgo.at/count.js"></script>
@@ -41,6 +117,7 @@
 	<meta property="og:image:height" content="1280">
 </head>
 <body itemscope itemtype="https://schema.org/Person">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
 	<div class="container px-5">
 
@@ -97,6 +174,7 @@
 		</button>
 	</div>
 </nav>
+<main id="main-content">
 <header class="header" id="aboutme">
 	<div class="container px-5">
 		<div class="row gx-5 align-items-center">
@@ -514,6 +592,7 @@
 		</div>
 	</div>
 </section>
+</main>
 	<ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-3381238987477190"
@@ -545,9 +624,9 @@
 			</a>
 		</li>
 		<li>
-			<a class="nav-link text-muted" href="/assets/en/cv.pdf" content="PDF link with curriculum vitae in english.">
+			<a class="nav-link text-muted" href="/assets/en/cv.pdf" content="PDF link with resume in english.">
 				&#127468;&#127463;
-				CV
+				Resume
 			</a>
 		</li>
 		<li class="nav-item"><a class="nav-link text-muted" href="/assets/es/cv.pdf" content="PDF link with curriculum vitae in spanish.">
