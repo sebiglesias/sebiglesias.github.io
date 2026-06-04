@@ -103,6 +103,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<style>@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype')}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype')}</style>
 	<script>!function(){var t=localStorage.getItem('theme-preference')||'system';document.documentElement.dataset.theme=t==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;}();</script>
+	<script src="https://cdn.cookiehub.eu/c2/9b6d1cac.js" type="text/javascript"></script>
 	<script data-goatcounter="https://xebox.goatcounter.com/count"
 			async src="//gc.zgo.at/count.js"></script>
 	<meta property="og:type" content="website">
@@ -115,6 +116,50 @@
 	<meta property="og:image:alt" content="A profile image of Sebastian Iglesias smiling.">
 	<meta property="og:image:width" content="1024">
 	<meta property="og:image:height" content="1280">
+<style>
+/* CookieHub: hide default UI — ID selectors beat .ch2-visible class specificity */
+#ch2-dialog, #ch2-settings-dialog, .ch2-container, [class^="ch2-"], [class*=" ch2-"] { display: none !important; }
+/* Override CookieHub's inline overflow:hidden on body (set by blockUI) */
+body { overflow: auto !important; }
+
+/* Custom consent banner */
+.consent-banner {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: #005f73; color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex; justify-content: center;
+  z-index: 9999;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+.consent-banner.show { transform: translateY(0); }
+.consent-inner {
+  max-width: 900px; width: 100%;
+  display: flex; flex-wrap: wrap;
+  align-items: center; gap: 1rem;
+}
+.consent-inner p { margin: 0; flex: 1; min-width: 250px; font-size: 0.9rem; }
+.consent-btn-group { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+.consent-btn {
+  padding: 0.5rem 1.25rem; border: 2px solid #fff;
+  border-radius: 6px; background: transparent; color: #fff;
+  cursor: pointer; font-weight: 600; font-size: 0.85rem;
+  white-space: nowrap;
+}
+.consent-btn.accept { background: #fff; color: #005f73; }
+.consent-btn.reject { background: transparent; color: #fff; }
+.consent-btn.reject:hover { background: rgba(255,255,255,0.1); }
+.consent-link {
+  color: rgba(255,255,255,.7); font-size: 0.85rem;
+  text-decoration: underline; cursor: pointer;
+  background: none; border: none; padding: 0;
+}
+/* Dark mode overrides */
+html[data-theme="dark"] .consent-banner { background: #161b22; }
+html[data-theme="dark"] .consent-btn.accept { background: #58a6ff; color: #0d1117; border-color: #58a6ff; }
+html[data-theme="dark"] .consent-btn.reject { border-color: #8b949e; color: #e6edf3; }
+</style>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -599,8 +644,10 @@
      data-ad-slot="9270280155"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+<script id="ad-consent-check">
+if (window.cookiehub && window.cookiehub.hasConsented('marketing')) {
+  (adsbygoogle = window.adsbygoogle || []).push({});
+}
 </script>
 <footer class="d-flex flex-column align-items-center py-3 my-4 px-4 border-top">
 	<ul class="nav justify-content-center flex-wrap">
@@ -639,7 +686,79 @@
 <script src="./js/nav.js"></script>
 <script src="./js/worker.js"></script>
 <script src="./js/theme.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190"
-     crossorigin="anonymous"></script>
+
+<div id="consent-banner" class="consent-banner" role="dialog" aria-label="Cookie consent">
+  <div class="consent-inner">
+    <p>
+      This site uses cookies from Google AdSense for personalized ads.
+      GoatCounter analytics is cookie-free and doesn't require consent.
+      <button class="consent-link" onclick="window.cookiehub.openSettings()">Customize</button>
+    </p>
+    <div class="consent-btn-group">
+      <button class="consent-btn accept" onclick="acceptAll()">Accept All</button>
+      <button class="consent-btn reject" onclick="rejectAll()">Reject All</button>
+    </div>
+  </div>
+</div>
+<script>
+function handleConsentChange() {
+  document.body.style.removeProperty('overflow');
+  document.documentElement.style.removeProperty('overflow');
+  var banner = document.getElementById('consent-banner');
+  if (window.cookiehub && window.cookiehub.hasAnswered()) {
+    banner.classList.remove('show');
+    if (window.cookiehub.hasConsented('marketing')) loadAdSense();
+  } else {
+    banner.classList.add('show');
+  }
+}
+function acceptAll() { if (window.cookiehub) window.cookiehub.allowAll(); }
+function rejectAll() { if (window.cookiehub) window.cookiehub.denyAll(); }
+
+function loadAdSense() {
+  if (document.querySelector('script[src*="pagead2.googlesyndication.com"]')) return;
+  var s = document.createElement('script');
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190';
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.onload = function() {
+    if (document.querySelector('.adsbygoogle')) {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  };
+  document.body.appendChild(s);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  /* MutationObserver: safety net to hide any CookieHub UI that CSS misses */
+  var obs = new MutationObserver(function(muts) {
+    for (var i = 0; i < muts.length; i++) {
+      for (var j = 0; j < (muts[i].addedNodes || []).length; j++) {
+        var n = muts[i].addedNodes[j];
+        if (n.nodeType === 1 && (n.id === 'ch2-dialog' || n.id === 'ch2-settings-dialog' || (n.className && typeof n.className === 'string' && n.className.indexOf('ch2-') !== -1))) {
+          n.style.setProperty('display', 'none', 'important');
+        }
+      }
+    }
+  });
+  obs.observe(document.documentElement, { childList: true, subtree: true });
+
+  var cpm = {
+    onInitialise: function(status) {
+      if (this.hasAnswered()) {
+        document.getElementById('consent-banner').classList.remove('show');
+        if (this.hasConsented('marketing')) loadAdSense();
+      } else {
+        this.closeDialog();
+        document.body.style.removeProperty('overflow');
+        document.documentElement.style.removeProperty('overflow');
+        document.getElementById('consent-banner').classList.add('show');
+      }
+    },
+    onStatusChange: function(status, prev) { handleConsentChange(); }
+  };
+  window.cookiehub.load(cpm);
+});
+</script>
 </body>
 </html>
