@@ -1,10 +1,10 @@
 # Sebastian Iglesias - Software Engineer
 
-> Senior Software Engineer and Teacher | Full Stack Developer | 8+ Years Experience
+> Senior Software Engineer and Teacher | Full Stack Developer | 9+ Years Experience
 
 ## Quick Overview
 
-Sebastián Alejo Iglesias is a software engineer and teacher from Argentina with over 8 years of experience in the tech industry. He has worked for major tech companies like MuleSoft/Salesforce and startups like Caribou and Autonoma AI.
+Sebastián Alejo Iglesias is a software engineer and teacher from Argentina with over 9 years of experience in the tech industry. He has worked for major tech companies like MuleSoft/Salesforce and startups like Caribou and Autonoma AI.
 
 **Current Roles:**
 - Senior Software Engineer at Allaria+ (2025-Present)

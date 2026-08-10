@@ -9,7 +9,7 @@ Owner: Sebastián Alejo Iglesias
 Type: Personal Portfolio Website
 
 ## About
-I'm Sebastián Alejo Iglesias, a software engineer and teacher based in Argentina, who speaks English and Spanish. I've been working in the tech industry for over 8 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
+I'm Sebastián Alejo Iglesias, a software engineer and teacher based in Argentina, who speaks English and Spanish. I've been working in the tech industry for over 9 years, and I've had the opportunity to work for both big tech companies and startups. I'm a full stack engineer, and I'm proficient in a variety of languages and technologies, including Java, Scala, Typescript, and React.
 
 ## Current Positions
 - Senior Software Engineer at Allaria+ (Jun 2025 - Present)
