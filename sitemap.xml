@@ -5,78 +5,50 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://sebiglesias.com.ar/</loc>
-  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/es/</loc>
-  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://sebiglesias.com.ar/assets/en/cv.pdf</loc>
-  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sebiglesias.com.ar/assets/es/cv.pdf</loc>
-  <lastmod>2025-07-17T14:37:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sebiglesias.com.ar/sushi-piece-counter/</loc>
-  <lastmod>2025-06-22T15:13:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sebiglesias.com.ar/empanadin/</loc>
-  <lastmod>2025-06-30T15:01:42+00:00</lastmod>
+  <loc>https://sebiglesias.com.ar/travel/</loc>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/juntadita/</loc>
-  <lastmod>2025-06-30T15:01:42+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sebiglesias.com.ar/coin-flip/</loc>
-  <lastmod>2025-12-22T15:13:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url> 
-<url>
-  <loc>https://sebiglesias.com.ar/telekino/</loc>
-  <lastmod>2025-12-22T15:13:56+00:00</lastmod>
+  <loc>https://sebiglesias.com.ar/sushi-piece-counter/</loc>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://solitario.ar/</loc>
-  <lastmod>2026-01-22T15:25:03+00:00</lastmod>
+  <loc>https://sebiglesias.com.ar/empanadin/</loc>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/exam-clock/</loc>
-  <lastmod>2026-05-21T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/callsign/</loc>
-  <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/color-change/</loc>
-  <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://sebiglesias.com.ar/memo-test/</loc>
-  <lastmod>2026-06-27T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
 
 </urlset>
-

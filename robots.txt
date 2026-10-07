@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: 
-Crawl-delay: 10
 Sitemap: https://sebiglesias.com.ar/sitemap.xml
 
 # LLM-friendly files available for AI/ML crawlers:

@@ -30,7 +30,7 @@
 	<script data-goatcounter="https://xebox.goatcounter.com/count"
 			async src="//gc.zgo.at/count.js"></script>
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Sebastian Iglesias - Ingeniero de Software">
+	<meta property="og:title" content="Sebastian Iglesias — Ingeniero de Software">
 	<meta property="og:description" content="Sitio personal de Sebastian Iglesias mostrando su trabajo como ingeniero de software, experiencias docentes y habilidades.">
 	<meta property="og:url" content="https://sebiglesias.com.ar/es/">
 	<meta property="og:locale" content="es_AR">
@@ -39,32 +39,54 @@
 	<meta property="og:image:alt" content="Una foto de perfil de Sebastian Iglesias sonriendo.">
 	<meta property="og:image:width" content="1024">
 	<meta property="og:image:height" content="1280">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Sebastian Iglesias — Ingeniero de Software">
+	<meta name="twitter:description" content="Sitio personal de Sebastian Iglesias mostrando su trabajo como ingeniero de software, experiencias docentes y habilidades.">
+	<meta name="twitter:image" content="https://sebiglesias.com.ar/img/me.webp">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://sebiglesias.com.ar/#person",
-  "name": "Sebastián Alejo Iglesias",
-  "givenName": "Sebastián",
-  "additionalName": "Alejo",
-  "familyName": "Iglesias",
-  "url": "https://sebiglesias.com.ar",
-  "image": "https://sebiglesias.com.ar/img/me-200.webp",
-  "email": "mailto:me@sebiglesias.com.ar",
-  "jobTitle": ["Software Engineer", "Teacher"],
-  "nationality": { "@type": "Country", "name": "Argentina" },
-  "knowsLanguage": ["English", "Spanish"],
-  "description": "Senior software engineer and teacher based in Argentina with 9+ years in the tech industry. Full stack engineer proficient in Java, Scala, TypeScript and React.",
-  "sameAs": [
-    "https://www.linkedin.com/in/sebiglesias",
-    "https://github.com/sebiglesias",
-    "https://makerworld.com/es/@xebox",
-    "https://steamcommunity.com/profiles/76561198045124691/"
-  ],
-  "worksFor": { "@type": "Organization", "name": "Allaria+" },
-  "alumniOf": [
-    { "@type": "CollegeOrUniversity", "name": "Universidad Austral" },
-    { "@type": "CollegeOrUniversity", "name": "ITBA University" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sebiglesias.com.ar/#website",
+      "url": "https://sebiglesias.com.ar/",
+      "name": "Sebastian Iglesias"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebiglesias.com.ar/es/#webpage",
+      "url": "https://sebiglesias.com.ar/es/",
+      "name": "Sebastian Iglesias — Ingeniero de Software",
+      "inLanguage": "es",
+      "isPartOf": { "@id": "https://sebiglesias.com.ar/#website" },
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://sebiglesias.com.ar/#person",
+        "name": "Sebastián Alejo Iglesias",
+        "givenName": "Sebastián",
+        "additionalName": "Alejo",
+        "familyName": "Iglesias",
+        "url": "https://sebiglesias.com.ar/es/",
+        "image": "https://sebiglesias.com.ar/img/me-200.webp",
+        "email": "mailto:me@sebiglesias.com.ar",
+        "jobTitle": ["Ingeniero de Software", "Docente"],
+        "nationality": { "@type": "Country", "name": "Argentina" },
+        "knowsLanguage": ["English", "Spanish"],
+        "description": "Ingeniero de software senior y docente radicado en Argentina con más de 9 años en la industria tecnológica. Ingeniero full stack especializado en Java, Scala, TypeScript y React.",
+        "sameAs": [
+          "https://www.linkedin.com/in/sebiglesias",
+          "https://github.com/sebiglesias",
+          "https://makerworld.com/es/@xebox",
+          "https://steamcommunity.com/profiles/76561198045124691/"
+        ],
+        "worksFor": { "@type": "Organization", "name": "Allaria+" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universidad Austral" },
+          { "@type": "CollegeOrUniversity", "name": "ITBA University" }
+        ]
+      }
+    }
   ]
 }
 </script>
@@ -146,7 +168,7 @@
 			</div>
 			<div class="col-lg-6 bounce-in-right">
 				<div class="headerImage">
-					<img itemprop="image" tabindex="0" id="face-image" class="rounded-circle img-thumbnail face-img" height="250" width="200" src="/img/me-200.webp" srcset="/img/me-200.webp 200w, /img/me.webp 400w" sizes="200px" alt="Retrato de Sebastián Iglesias, ingeniero de software y docente, sonriendo a la cámara." />
+					<img itemprop="image" tabindex="0" id="face-image" class="rounded-circle img-thumbnail face-img" height="250" width="200" src="/img/me-200.webp" srcset="/img/me-200.webp 200w, /img/me.webp 400w" sizes="200px" fetchpriority="high" alt="Retrato de Sebastián Iglesias, ingeniero de software y docente, sonriendo a la cámara." />
 				</div>
 			</div>
 		</div>
@@ -158,7 +180,7 @@
 			<p tabindex="0" about="Resumen" id="summary" class="lead col-lg-12 description" itemprop="description">
 				Soy <em itemprop="mainEntityOfPage">Sebastián Alejo Iglesias</em>, <em itemprop="jobTitle">ingeniero de software</em> y <em itemprop="jobTitle">docente</em> radicado en <span itemprop="nationality">Argentina</span>, hablo <em itemprop="knowsLanguage">inglés</em> y <em itemprop="knowsLanguage">español</em>. <span itemprop="description">Trabajo en la industria tecnológica desde hace más de 9 años, y he tenido la oportunidad de trabajar tanto en grandes empresas tecnológicas como en startups. Soy ingeniero full stack y manejo diversos lenguajes y tecnologías, incluyendo Java, Scala, Typescript y React.
 
-				Me <a href="#work-experience">apasiona construir software innovador y centrado en el usuario</a>. También soy un <a href="#education">aprendiz permanente</a>, siempre con ganas de aprender cosas nuevas. En mi tiempo libre, disfruto probar herramientas de machine learning, <a href="https://makerworld.com/es/@xebox">impresión 3D</a>, radioafición, hidroponía, fútbol, <a href="https://steamcommunity.com/profiles/76561198045124691/">juegos</a> y <a href="/travel/index.html">viajar</a>.
+				Me <a href="#work-experience">apasiona construir software innovador y centrado en el usuario</a>. También soy un <a href="#education">aprendiz permanente</a>, siempre con ganas de aprender cosas nuevas. En mi tiempo libre, disfruto probar herramientas de machine learning, <a href="https://makerworld.com/es/@xebox">impresión 3D</a>, radioafición, hidroponía, fútbol, <a href="https://steamcommunity.com/profiles/76561198045124691/">juegos</a> y <a href="/travel/">viajar</a>.
 
 							<em itemprop="seeks">Mi objetivo es ser feliz conmigo mismo y con mi trabajo. Espero algún día fundar mi propia empresa, aunque no estoy seguro de qué hará esa empresa.</em> Por ahora, me enfoco en aprender y crecer como ingeniero de software.</span>
 			</p>
@@ -394,7 +416,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/juntadita" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/juntadita/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -431,7 +453,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/sushi-piece-counter" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/sushi-piece-counter/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -465,7 +487,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/empanadin" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/empanadin/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -532,7 +554,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/exam-clock" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/exam-clock/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -565,7 +587,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/callsign" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/callsign/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -598,7 +620,7 @@
 					</div>
 
 					<div class="project-links">
-						<a href="https://sebiglesias.com.ar/color-change" class="project-link" target="_blank" rel="noopener noreferrer">
+						<a href="https://sebiglesias.com.ar/color-change/" class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
 							</svg>
@@ -658,7 +680,7 @@
 			CV
 		</a></li>
 	</ul>
-	<a class="nav-link text-muted small mt-1" itemprop="URL" href="https://sebiglesias.com.ar">https://sebiglesias.com.ar</a>
+	<a class="nav-link text-muted small mt-1" itemprop="URL" href="https://sebiglesias.com.ar/es/">https://sebiglesias.com.ar/es/</a>
 </footer>
 <script src="/js/nav.js"></script>
 <script src="/js/worker.js"></script>
