@@ -1,0 +1,47 @@
+# Rebuilds assets/{en,es}/cv.pdf from the .tex sources with tectonic
+# and commits the PDFs back, so GitHub Pages serves the new version.
+name: Build CV
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "assets/**/*.tex"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-cv
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build PDFs
+        run: |
+          tectonic --outdir assets/en assets/en/cv_en.tex
+          mv assets/en/cv_en.pdf assets/en/cv.pdf
+          tectonic --outdir assets/es assets/es/cv_es.tex
+          mv assets/es/cv_es.pdf assets/es/cv.pdf
+
+      - name: Commit PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/en/cv.pdf assets/es/cv.pdf
+          if git diff --cached --quiet; then
+            echo "PDFs unchanged"
+          else
+            git commit -m "chore: rebuild CV PDFs"
+            git push
+          fi
