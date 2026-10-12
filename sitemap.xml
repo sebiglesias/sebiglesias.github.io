@@ -72,6 +72,12 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://sebiglesias.com.ar/coin-flip/</loc>
+  <lastmod>2026-10-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://sebiglesias.com.ar/callsign/</loc>
   <lastmod>2026-10-12T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
