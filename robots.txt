@@ -2,6 +2,12 @@ User-agent: *
 Disallow: 
 Sitemap: https://sebiglesias.com.ar/sitemap.xml
 
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
 # LLM-friendly files available for AI/ML crawlers:
 # - Concise summary: https://sebiglesias.com.ar/llms.txt
 # - Comprehensive profile: https://sebiglesias.com.ar/llms-full.txt

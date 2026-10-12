@@ -7,47 +7,56 @@
 
 <url>
   <loc>https://sebiglesias.com.ar/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/es/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/travel/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/juntadita/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/sushi-piece-counter/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/empanadin/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/exam-clock/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/callsign/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/color-change/</loc>
-  <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-11T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 
