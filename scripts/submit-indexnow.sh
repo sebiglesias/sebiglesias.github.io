@@ -21,6 +21,10 @@ PAYLOAD=$(cat <<EOF
     "https://${HOST}/sushi-piece-counter/",
     "https://${HOST}/empanadin/",
     "https://${HOST}/exam-clock/",
+    "https://${HOST}/asadin/",
+    "https://${HOST}/pizzadita/",
+    "https://${HOST}/ayce-counter/",
+    "https://${HOST}/spool-scale/",
     "https://${HOST}/callsign/",
     "https://${HOST}/color-change/"
   ]
