@@ -1,4 +1,3 @@
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -17,18 +16,8 @@
   \input{glyphtounicode}
 \fi
 
-
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
 \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -36,182 +25,135 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins (Calibrated for strict 1-page density)
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.35in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4pt}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-% (pdfTeX only; XeTeX/tectonic already embeds Unicode)
 \ifPDFTeX
   \pdfgentounicode=1
 \fi
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-2.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
-    \textbf{\Huge \scshape Sebastián Iglesias} \\ \vspace{1pt}
-    \href{https://sebiglesias.com.ar}{Email: \underline{me (at) sebiglesias.com.ar}} $|$ 
-    \href{https://linkedin.com/in/sebiglesias}{LinkedIn: \underline{linkedin.com/in/sebiglesias}} $|$
-    \href{https://github.com/sebiglesias}{Github: \underline{github.com/sebiglesias}}
+    \textbf{\Huge \scshape Sebastián Iglesias} \\ \vspace{2pt}
+    \small \href{https://sebiglesias.com.ar}{\underline{sebiglesias.com.ar}} $|$ 
+    \href{mailto:me@sebiglesias.com.ar}{\underline{me@sebiglesias.com.ar}} $|$ 
+    \href{https://linkedin.com/in/sebiglesias}{\underline{linkedin.com/in/sebiglesias}} $|$
+    \href{https://github.com/sebiglesias}{\underline{github.com/sebiglesias}}
 \end{center}
 
+%-----------PROFESSIONAL SUMMARY-----------
 \section{Resumen Profesional}
-    Soy un Ingeniero de Software experimentado con casi nueve años de experiencia diseñando y desarrollando sistemas robustos y escalables en tecnologías cloud, backend y frontend. Con experiencia en programación funcional usando React, Node.js y TypeScript, he liderado proyectos de impacto que mejoraron los pipelines de CI/CD y las experiencias de los clientes, impulsando un crecimiento medible. Además, mi trabajo con sistemas basados en datos y microservicios usando Java, Spring y PostgreSQL ha perfeccionado mi capacidad para ofrecer soluciones innovadoras ante desafíos complejos. Busco oportunidades para aprovechar mis habilidades técnicas y de liderazgo para construir productos de software transformadores.
+\small{Ingeniero de Software Senior con más de 9 años de experiencia diseñando y escalando sistemas distribuidos, arquitecturas cloud y productos digitales. Trayectoria destacada en MuleSoft (Salesforce) y startups tecnológicas de alto crecimiento desarrollando microservicios resilientes en Java, Scala, Python, TypeScript y tecnologías cloud nativas. Sólida experiencia en diseño de sistemas, CI/CD y arquitecturas orientadas a eventos, complementada con docencia universitaria en Ingeniería en Informática.}
 
 %-----------EXPERIENCE-----------
 \section{Experiencia}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Jefe de Trabajos Prácticos}{Mar 2025 -- Presente}
-      {Universidad Austral, Facultad de Ingeniería}{Buenos Aires, Argentina}
-    \resumeSubSubheading
-      {Ayudante de Cátedra}{Feb 2023 -- Mar 2025}
-      \resumeItemListStart
-        \resumeItem{Preparo y dicto clases, trabajos prácticos y exámenes para estudiantes de Ingeniería en Informática en Introducción a la Programación 1, Laboratorio I, Laboratorio II y Programación II.}
-        \resumeItem{Introducción a la Programación 1 (estudiantes de primer año): Python básico y principios de programación, uso de una terminal estándar POSIX, git y Github.}
-        \resumeItem{Laboratorio I y II (estudiantes de 3er año):
-        Este curso proporciona el conocimiento fundamental necesario para desarrollar un proyecto de software, abarcando todas las etapas desde la concepción hasta la implementación y pruebas. Los estudiantes trabajan en grupos y proponen proyectos de software del mundo real, utilizando análisis de casos de uso para definir los requisitos y crear un cronograma de implementación. El curso evalúa el progreso a través de dos entregas parciales, donde cada grupo muestra la implementación de sus casos de uso.}
-        \resumeItemListEnd
+
     \resumeSubheading
       {Ingeniero de Software}{Jun 2025 -- Presente}
       {Allaria+}{Buenos Aires, Argentina}
       \resumeItemListStart
-      \resumeItem{Mantuve y mejoré servicios existentes en Python (Django y FastApi), Scala (Tapir, http4s, cats), Java (Spring), Typescript (Nodejs) y PHP(CodeIgniter), acorde a un mayor número de clientes agregando herramientas de monitoreo (open tracing) con AWS/Cloudwatch (terraform). Desarrollé herramientas internas para el área de Finanzas, mejorando procesos como conciliaciones, onboarding, cheques, boletos y comprobantes. Implementé una plataforma de compra/venta de criptomonedas integrada con los sistemas de Allaria+. Mejoré y agregué librerías compartidas del equipo de ingeniería y participé en desarrollos de UI web y mobile con React Native.}
+        \resumeItem{Diseño y escalabilidad de servicios fintech distribuidos en Python (FastAPI, Django), Scala (Tapir, http4s, Cats) y Java (Spring), dando soporte a transacciones de alto volumen y conciliaciones financieras.}
+        \resumeItem{Implementación de una plataforma automatizada de compra/venta de criptomonedas integrada con sistemas core de liquidación.}
+        \resumeItem{Mejora de observabilidad cloud mediante AWS CloudWatch, OpenTracing y Terraform, reduciendo el MTTR en producción.}
+        \resumeItem{Contribución al desarrollo de librerías core compartidas e interfaces móviles multiplataforma en React Native.}
       \resumeItemListEnd
+
     \resumeSubheading
-      {Founding Ingeniero de Software}{Mar 2025 -- Jun 2025}
+      {Founding Software Engineer}{Mar 2025 -- Jun 2025}
       {Autonoma AI}{Buenos Aires, Argentina}
       \resumeItemListStart
-      \resumeItem{Diseñé e implementé nuevas funcionalidades de pruebas impulsadas por IA que mejoraron significativamente los resultados de los clientes. Utilicé GCP, Kubernetes y microservicios para construir una infraestructura escalable, empleando TypeScript para los servicios backend e integrando OpenAI para mejorar la generación y validación de pruebas.}
+        \resumeItem{Arquitectura de infraestructura cloud escalable en GCP y Kubernetes para pipelines automatizados de testing impulsados por IA.}
+        \resumeItem{Desarrollo de microservicios de baja latencia en TypeScript integrados con modelos de OpenAI para generación y corrección dinámica de tests.}
       \resumeItemListEnd
+
     \resumeSubheading
-      {Ingeniero de Software}{Jul 2022 -- Mar 2025}
-      {Caribou}{Rol Remoto}
+      {Ingeniero de Software (Remoto)}{Jul 2022 -- Mar 2025}
+      {Caribou}{Estados Unidos (Remoto)}
       \resumeItemListStart
-        \resumeItem{Diseñé, documenté, lideré y desarrollé numerosas funcionalidades que abarcan pipelines de CI/CD, servicios en la nube en GCP, tareas de frontend y backend utilizando React, Node.js, TypeScript y Express (enfatizando un enfoque de programación funcional). Establecí e implementé varios tipos de pruebas utilizando Playwright para asegurar la robustez del producto. Trabajé estrechamente con los fundadores y clientes para comprender mejor sus necesidades y luego definir, liderar y desarrollar junto a ellos características clave del producto, impulsando un crecimiento significativo en nuestra base de usuarios.}
+        \resumeItem{Liderazgo en iniciativas de desarrollo fullstack con React, Node.js y TypeScript bajo paradigma funcional en microservicios GCP.}
+        \resumeItem{Colaboración directa con fundadores de EE.UU. y stakeholders para definir arquitectura de producto y liderar ciclos de entrega.}
+        \resumeItem{Consolidación de infraestructura de testing automatizado con Playwright y hardening de pipelines CI/CD, acelerando los despliegues a producción.}
       \resumeItemListEnd
+
     \resumeSubheading
-      {Ingeniero de Software Senior}{Dic 2017 -- Jul 2022}
+      {Ingeniero de Software Senior (Promovido desde Asociado)}{Dic 2017 -- Jul 2022}
       {MuleSoft, a Salesforce company}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Ingeniero de Software Senior: Desarrollé Mulesoft RPA, adaptando una base de código heredada al estilo de codificación de Mulesoft. Utilicé microservicios en Java y Spring que interactuaban con una base de datos Postgresql con migraciones gestionadas por Liquibase, interactuando con diferentes departamentos de ingeniería. (Jul 2021 -- Jul 2022)}
-        \resumeItem{Ingeniero de Software: Desarrollé el Datagraph de Anypoint en un equipo de ingeniería siguiendo metodologías ágiles, desarrollando servicios frontend y backend. En conjunto con mi equipo, desarrollamos Servicios REST utilizando Java y Spring, así como clientes web con React, Redux y Typescript. También desarrollé pruebas de integración utilizando Testcafe. (Feb 2020 -- Jul 2021)}
-        \resumeItem{Ingeniero de Software Asociado: Desarrollé la Plataforma de Monitoreo dentro de la plataforma Anypoint de Mulesoft en un equipo de ingeniería siguiendo metodologías ágiles, desarrollando servicios frontend y backend. En conjunto con mi equipo, desarrollamos Servicios REST utilizando Scala, Akka y Java, y varios tipos de bases de datos, así como clientes web con React, Angular y Typescript. Todo ello fue desplegado en la nube de AWS mediante herramientas como Terraform, salt, spinnaker y Jenkins. Para fines de monitoreo, trabajé con el stack de elastic search y configuré scripts en Python y bash.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Profesor de IT}{Abr 2016 -- Dic 2016}
-      {FINES}{Buenos Aires, Argentina}
-      \resumeItemListStart
-        \resumeItem{Trabajé como profesor de informática en un curso acelerado de secundaria para adultos bajo el plan FINES. Planifiqué y di clases nocturnas tanto a adultos como a adolescentes.}
+        \resumeItem{\textbf{MuleSoft RPA (Senior SE, 2021--2022):} Rediseño de componentes heredados hacia microservicios Spring Boot resilientes conectados a bases de datos PostgreSQL con migraciones Liquibase en entornos corporativos.}
+        \resumeItem{\textbf{Anypoint DataGraph (SE, 2020--2021):} Desarrollo de microservicios de orquestación de consultas distribuidas en Java/Spring y clientes React/TypeScript, permitiendo unificar APIs en una capa unificada GraphQL.}
+        \resumeItem{\textbf{Anypoint Monitoring Platform (Associate SE, 2017--2020):} Desarrollo de telemetría y monitoreo en tiempo real usando Scala (Akka), Java y Elasticsearch. Aprovisionamiento de infraestructura AWS multirregión con Terraform, Spinnaker y Jenkins.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Voluntariado}{Mar 2015 -- May 2015}
-      {Entrepreneur 4 Entrepreneur}{Buenos Aires, Argentina}
+      {Jefe de Trabajos Prácticos (Ayudante de Cátedra desde 2023)}{Feb 2023 -- Presente}
+      {Universidad Austral, Facultad de Ingeniería}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Fui voluntario en el área de consultoría e informática. Estudié y apliqué metodologías LEAN startup para ayudar a otros emprendedores, y también realicé desarrollo web para la empresa de consultoría.}
+        \resumeItem{Coordinación de cátedra y dictado de clases prácticas en Laboratorio I y II (3er año), guiando a equipos estudiantiles en el ciclo de vida completo de proyectos de software (arquitectura, CI/CD y metodología ágil).}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {IT Manager}{Ago 2014 -- Feb 2015}
-      {I-Gen Latam}{Buenos Aires, Argentina}
-      \resumeItemListStart
-        \resumeItem{Realicé reparación de computadoras, gestión de bases de datos MySQL, desarrollo web con PHP y mantenimiento de un sistema legado de generación de informes.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Proyectos}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Informática Solidaria} $|$ \emph{ONG}}{Sep 2015 -- Sep 2017}
-          \resumeItemListStart
-            \resumeItem{Fundé Informática Solidaria, una organización que recibía equipos electrónicos usados, los reparaba y los donaba a instituciones educativas en Pilar, Buenos Aires, Argentina.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Educación}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {ITBA}{Buenos Aires, Argentina}
-      {Especialización en Ciencia de Datos (Posgrado)}{2020 -- 2021}
+      {ITBA (Instituto Tecnológico de Buenos Aires)}{Buenos Aires, Argentina}
+      {Especialización de Posgrado en Ciencia de Datos}{2020 -- 2021}
     \resumeSubheading
       {Universidad Austral}{Buenos Aires, Argentina}
-      {Ingeniería en Informática}{Feb. 2014 -- Dic. 2018}
+      {Ingeniería en Informática}{2014 -- 2018}
   \resumeSubHeadingListEnd
 
-%-----------Skills-----------
-
+%-----------TECHNICAL SKILLS-----------
 \section{Habilidades Técnicas}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.12in, label={}]
     \small{\item{
-     \textbf{Lenguajes}{: Java, Python, SQL (Postgres), JavaScript, HTML/CSS, R, Typescript, Scala, Bash, PHP, Kotlin} \\
-     \textbf{Frameworks/librerías}{: React, Node.js, FastAPI, Django, JUnit, Spring, Express, PostHog, Tapir, Http4s, Cats} \\
-     \textbf{Herramientas de Desarrollador}{: Git, GitHub, Docker, Jenkins, CircleCI, Google Cloud Platform (GCP), AWS, Intellij, Kubernetes, Nginx, Redis, Dynamo} \\
+     \textbf{Lenguajes}{: Java, Python, TypeScript, JavaScript, Scala, SQL (PostgreSQL), Kotlin, Bash, PHP} \\
+     \textbf{Frameworks y Librerías}{: Spring Boot, FastAPI, Django, React, Node.js, Express, Cats, Http4s, Tapir, Playwright, React Native} \\
+     \textbf{Cloud, DevOps y Almacenamiento}{: AWS, GCP, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, Jenkins), Elasticsearch, Redis} \\
+     \textbf{Arquitectura y Paradigmas}{: Sistemas Distribuidos, Microservicios, Arquitectura Orientada a Eventos, Programación Funcional, REST, GraphQL}
     }}
  \end{itemize}
 
-%-------------------------------------------
 \end{document}

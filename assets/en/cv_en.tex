@@ -16,18 +16,8 @@
   \input{glyphtounicode}
 \fi
 
-
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
 \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -35,192 +25,135 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins (Calibrated for strict 1-page density)
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.35in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\setlength{\footskip}{4.08003pt}
+\setlength{\footskip}{4pt}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-% (pdfTeX only; XeTeX/tectonic already embeds Unicode)
 \ifPDFTeX
   \pdfgentounicode=1
 \fi
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-2.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
-
-
 \begin{center}
-    \textbf{\Huge \scshape Sebastián Iglesias} \\ \vspace{1pt}
-    \href{https://sebiglesias.com.ar}{Email: \underline{me (at) sebiglesias.com.ar}} $|$ 
-    \href{https://linkedin.com/in/sebiglesias}{Linkedin: \underline{linkedin.com/in/sebiglesias}} $|$
-    \href{https://github.com/sebiglesias}{Github: \underline{github.com/sebiglesias}}
+    \textbf{\Huge \scshape Sebastián Iglesias} \\ \vspace{2pt}
+    \small \href{https://sebiglesias.com.ar}{\underline{sebiglesias.com.ar}} $|$ 
+    \href{mailto:me@sebiglesias.com.ar}{\underline{me@sebiglesias.com.ar}} $|$ 
+    \href{https://linkedin.com/in/sebiglesias}{\underline{linkedin.com/in/sebiglesias}} $|$
+    \href{https://github.com/sebiglesias}{\underline{github.com/sebiglesias}}
 \end{center}
 
+%-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
-    I am a seasoned Software Engineer with nearly nine years of experience designing and developing robust, scalable systems across cloud, back-end, and front-end technologies. With expertise in functional programming using React, Node.js, and TypeScript, I have led impactful projects that improved CI/CD pipelines and customer experiences, driving measurable growth. Additionally, my work with data-driven systems and microservices using Java, Spring, and PostgreSQL has honed my ability to deliver innovative solutions to complex challenges. I am seeking opportunities to leverage my technical and leadership skills to build transformative software products and contribute to a forward-thinking organization.
+\small{Senior Software Engineer with 9+ years of experience designing and scaling distributed backend systems, cloud architectures, and user-facing products. Track record spanning MuleSoft (Salesforce) and fast-growing venture-backed startups delivering resilient microservices in Java, Scala, Python, TypeScript, and Go/Cloud native ecosystems. Strong background in system design, CI/CD, and event-driven architectures, combined with academic lecturing in Computer Engineering.}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Head Teaching Assistant (Jefe de Trabajos Prácticos)}{March 2025 -- Present}
-      {Universidad Austral, School of Engineering}{Buenos Aires, Argentina}
-    \resumeSubSubheading
-      {Teaching Assistant}{February 2023 -- March 2025}
+      {Software Engineer}{June 2025 -- Present}
+      {Allaria+}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Preparing and giving classes, assignments and exams to software engineering students in Introduction to Programming 1, Laboratory I, Laboratory II and Programming II.}
-        \resumeItem{Introduction to Programming 1 (1st-year students): Basic Python and programming principles, use of a standard POSIX terminal, git, and GitHub}
-        \resumeItem{Laboratory I and II (3rd-year students):
-        Teaching to develop a software project, covering all stages from conception to implementation and testing. Students work in groups and propose real-life software projects, using "use case analysis" to define requirements and create an implementation schedule. The course evaluates progress through two partial deliveries, where each group showcases their use case implementations using the developed software.}
-        \resumeItemListEnd
-    \resumeSubheading
-    {Software Engineer}{June 2025 -- Present}
-    {Allaria+}{Buenos Aires, Argentina}
-    \resumeItemListStart
-        \resumeItem{Maintained and enhanced existing services written in Python (Django, FastAPI), Scala (Tapir, http4s, Cats), Java (Spring), TypeScript (Node.js), and PHP (CodeIgniter), scaling systems to support a growing client base by adding monitoring and open tracing using AWS/CloudWatch and Terraform. Developed internal tools for the Finance team, improving processes such as reconciliations, onboarding, checks, trade tickets, and receipts. Implemented a cryptocurrency trading platform (buy/sell) integrated with Allaria+ core systems. Improved and extended shared engineering libraries and contributed to web and mobile UI development using React Native.}
-    \resumeItemListEnd
-
+        \resumeItem{Architect and scale distributed fintech services in Python (FastAPI, Django), Scala (Tapir, http4s, Cats), and Java (Spring), supporting core financial reconciliations and high-volume operations.}
+        \resumeItem{Implemented an automated crypto trading platform (buy/sell) integrated with core ledgers and liquidity providers.}
+        \resumeItem{Enhanced cloud observability across services with AWS CloudWatch, OpenTracing, and Terraform, proactively lowering MTTR.}
+        \resumeItem{Contributed to shared engineering core libraries and cross-platform mobile interfaces in React Native.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Founding Software Engineer}{March 2025 -- June 2025}
       {Autonoma AI}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Designed and implemented new AI-powered testing features that significantly improved customer outcomes. I used GCP, Kubernetes and microservices to build scalable infrastructure, using TypeScript for back-end services and integrating OpenAI to improve test generation and validation.}
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Engineer}{July 2022 -- March 2025}
-      {Caribou}{Remote role}
-      \resumeItemListStart
-        \resumeItem{Designed, documented, led and developed numerous features spanning CI/CD pipelines, cloud services in GCP, front and backend tasks using React, Node.js, Typescript and Express (emphasizing a functional programming approach). Established and implemented various types of tests using Playwright to ensure the robustness of the product. Worked closely with founders and clients to better understand their needs, to later define, lead a software development team, and implement key product features with them, driving significant growth in our customer user base.}
+        \resumeItem{Architected scalable cloud infrastructure on GCP and Kubernetes for AI-driven automated testing pipelines.}
+        \resumeItem{Built low-latency TypeScript microservices integrated with OpenAI APIs to generate and self-heal end-to-end tests dynamically.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Senior Software Engineer}{December 2017 -- July 2022}
+      {Software Engineer (Remote)}{July 2022 -- March 2025}
+      {Caribou}{United States (Remote)}
+      \resumeItemListStart
+        \resumeItem{Led fullstack engineering initiatives using React, Node.js, and TypeScript with functional programming on GCP.}
+        \resumeItem{Collaborated with US founders and stakeholders to architect core product features and lead development sprints.}
+        \resumeItem{Hardened CI/CD automation and built end-to-end test infrastructure with Playwright, significantly improving deployment velocity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Software Engineer (Promoted from Associate)}{December 2017 -- July 2022}
       {MuleSoft, a Salesforce company}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Senior Software Engineer: Developed Mulesoft RPA, adapting a legacy codebase to Mulesoft's coding style. Used Java and Spring microservices that interacted with a Postgresql database with migrations managed by Liquibase interacting with different engineering departments. (Jul 2021 -- Jul 2022)}
-        \resumeItem{Software Engineer: Developed Anypoint's Datagraph in an engineering team following agile methodologies, developing front-end and back-end services. In conjunction with my team, we developed REST services using Java and Spring as well as web clients with React, Redux, and Typescript. Developed integration tests using Testcafe. (Feb 2020 -- Jul 2021)}
-        \resumeItem{Associate Software Engineer: Developed Monitoring Platform inside Mulesoft's Anypoint Platform in an engineering team following agile methodologies, developing front- and back-end services. In conjunction with my team, we developed REST services using Scala, Akka, and Java and several types of databases, as well as web clients with React, Angular, and Typescript. Which were deployed in the AWS cloud via tools such as Terraform, salt, spinnaker, and Jenkins. For Monitoring purposes, I have worked with the elastic search stack and set up scripts on Python and bash.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Information Technology Teacher}{April 2016 -- December 2016}
-      {FINES}{Buenos Aires, Argentina}
-      \resumeItemListStart
-        \resumeItem{Worked as a teacher in IT for an accelerated high school course for adults under the FINES plan. I planned and gave night classes to both adults and teenagers.}
+        \resumeItem{\textbf{MuleSoft RPA (Senior SE, 2021--2022):} Re-architected core legacy services into resilient Spring Boot microservices interacting with PostgreSQL via Liquibase migrations across multiple cross-functional departments.}
+        \resumeItem{\textbf{Anypoint DataGraph (SE, 2020--2021):} Engineered distributed query orchestration backends in Java/Spring and web clients in React/TypeScript, allowing customers to unify enterprise APIs into a single GraphQL data layer.}
+        \resumeItem{\textbf{Anypoint Monitoring Platform (Associate SE, 2017--2020):} Developed real-time telemetry backends using Scala (Akka), Java, and Elasticsearch. Provisioned multi-region AWS cloud infrastructure via Terraform, Spinnaker, and Jenkins.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Volunteer}{March 2015 -- May 2015}
-      {Entrepreneur 4 Entrepreneur}{Buenos Aires, Argentina}
+      {Head Teaching Assistant (Jefe de Trabajos Prácticos)}{February 2023 -- Present}
+      {Universidad Austral, School of Engineering}{Buenos Aires, Argentina}
       \resumeItemListStart
-        \resumeItem{Volunteer in consulting and IT area. Studied and applied LEAN startup methodologies to assist other entrepreneurs and also did some web development for the consulting company.}
+        \resumeItem{Coordinate syllabus and lead practical coursework for 3rd-year engineering students in Laboratory I \& II, mentoring teams through real-world software engineering lifecycles (system architecture, CI/CD, and agile deliveries).}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {IT Manager}{August 2014 -- February 2015}
-      {I-Gen Latam}{Buenos Aires, Argentina}
-      \resumeItemListStart
-        \resumeItem{Computer repairing, MySQL database management, PHP and web development and maintained a legacy report generation system.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Informatica Solidaria} $|$ \emph{NGO organization}}{September 2015 -- September 2017}
-          \resumeItemListStart
-            \resumeItem{Founded Informatica Solidaria, an organization that received old electronics, repaired and donated them to educational organizations in Pilar, Buenos Aires, Argentina.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-------------------------------------------
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {ITBA University}{Buenos Aires, Argentina}
+      {ITBA (Instituto Tecnológico de Buenos Aires)}{Buenos Aires, Argentina}
       {Postgraduate Specialization in Data Science}{2020 -- 2021}
     \resumeSubheading
-      {Austral University}{Buenos Aires, Argentina}
-      {Computer Engineering degree (Ingeniería en Informática)}{Feb. 2014 -- Dec. 2018}
+      {Universidad Austral}{Buenos Aires, Argentina}
+      {B.S. in Computer Engineering (Ingeniería en Informática)}{2014 -- 2018}
   \resumeSubHeadingListEnd
-%-------------------------------------------
 
-%-----------Skills-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.12in, label={}]
     \small{\item{
-     \textbf{Lenguajes}{: Java, Python, SQL (Postgres), JavaScript, HTML/CSS, R, Typescript, Scala, Bash, PHP, Kotlin} \\
-     \textbf{Frameworks/librerias}{: React, Node.js, FastAPI, Django, JUnit, Spring, Express, PostHog, Tapir, Http4s, Cats} \\
-     \textbf{Herramientas de Desarrollador}{: Git, GitHub, Docker, Jenkins, CircleCI, Google Cloud Platform (GCP), AWS, Intellij, Kubernetes, Nginx, Redis, Dynamo} \\
+     \textbf{Languages}{: Java, Python, TypeScript, JavaScript, Scala, SQL (PostgreSQL), Kotlin, Bash, PHP} \\
+     \textbf{Frameworks \& Libraries}{: Spring Boot, FastAPI, Django, React, Node.js, Express, Cats, Http4s, Tapir, Playwright, React Native} \\
+     \textbf{Cloud, DevOps \& Storage}{: AWS, GCP, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, Jenkins), Elasticsearch, Redis} \\
+     \textbf{Architectures \& Paradigms}{: Distributed Systems, Microservices, Event-Driven Architecture, Functional Programming, REST, GraphQL}
     }}
  \end{itemize}
-%-------------------------------------------
-
 
 \end{document}
