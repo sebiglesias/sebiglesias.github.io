@@ -29,7 +29,8 @@ PAYLOAD=$(cat <<EOF
     "https://${HOST}/callsign/",
     "https://${HOST}/color-change/",
     "https://${HOST}/futbol/",
-    "https://${HOST}/telekino/"
+    "https://${HOST}/telekino/",
+    "https://${HOST}/feriados/"
   ]
 }
 EOF
