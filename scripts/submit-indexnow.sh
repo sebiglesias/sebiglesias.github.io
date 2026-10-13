@@ -31,7 +31,11 @@ PAYLOAD=$(cat <<EOF
     "https://${HOST}/futbol/",
     "https://${HOST}/telekino/",
     "https://${HOST}/feriados/",
-    "https://${HOST}/billeteras/"
+    "https://${HOST}/billeteras/",
+    "https://${HOST}/inflacion/",
+    "https://${HOST}/colapinto/",
+    "https://${HOST}/sueldo-neto/",
+    "https://${HOST}/monotributo/"
   ]
 }
 EOF

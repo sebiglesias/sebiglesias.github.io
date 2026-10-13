@@ -113,5 +113,29 @@
   <changefreq>daily</changefreq>
   <priority>0.85</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/inflacion/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/colapinto/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/sueldo-neto/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/monotributo/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
 
 </urlset>
