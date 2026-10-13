@@ -353,6 +353,18 @@
   <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/ceramicos/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/aduana/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
 
 </urlset>
 
