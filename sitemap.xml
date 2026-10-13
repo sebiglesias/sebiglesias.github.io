@@ -91,7 +91,49 @@
 </url>
 <url>
   <loc>https://sebiglesias.com.ar/futbol/</loc>
-  <lastmod>2026-10-12T00:00:00+00:00</lastmod>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/boca.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/river.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/racing.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/independiente.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/san-lorenzo.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/seleccion.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/futbol/messi.html</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.90</priority>
 </url>
