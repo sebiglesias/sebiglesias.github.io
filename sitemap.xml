@@ -107,5 +107,11 @@
   <changefreq>daily</changefreq>
   <priority>0.85</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/billeteras/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.85</priority>
+</url>
 
 </urlset>
