@@ -311,6 +311,48 @@
   <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/frigorias/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/cuil/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/multas/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/pileta/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/impresion-3d/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/embarazo/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/edad-perro/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
 
 </urlset>
 
