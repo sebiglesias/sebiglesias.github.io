@@ -257,6 +257,54 @@
   <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/cuota-alimentaria/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/horas-extras/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/ganancias/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/vacaciones/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/intereses-judiciales/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/consumo-gas/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/materiales/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/talles/</loc>
+  <lastmod>2026-10-13T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
 
 </urlset>
 
