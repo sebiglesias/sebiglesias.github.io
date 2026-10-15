@@ -6,6 +6,11 @@
     <meta name="color-scheme" content="light dark">
     <title>Travel Map &amp; Countries Visited — Sebastian Iglesias</title>
     <meta name="description" content="Interactive travel map and memories: explore the countries and cities visited by Sebastian Iglesias worldwide with travel statistics and photo highlights." />
+    <script>
+        if (window.location.pathname.endsWith('/index.html')) {
+            window.location.replace(window.location.pathname.replace(/\/index\.html$/, '/'));
+        }
+    </script>
     <link rel="canonical" href="https://sebiglesias.com.ar/travel/" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="Travel Map &amp; Countries Visited — Sebastian Iglesias">
