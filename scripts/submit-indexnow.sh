@@ -81,7 +81,8 @@ PAYLOAD=$(cat <<EOF
     "https://${HOST}/cafe-ratio/",
     "https://${HOST}/pies-madereros/",
     "https://${HOST}/dieta-barf/",
-    "https://${HOST}/masa-madre/"
+    "https://${HOST}/masa-madre/",
+    "https://${HOST}/bebidas-fiesta/"
   ]
 }
 EOF
