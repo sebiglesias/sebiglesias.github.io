@@ -419,6 +419,12 @@
   <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/barra-olimpica/</loc>
+  <lastmod>2026-10-28T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
 
 </urlset>
 
