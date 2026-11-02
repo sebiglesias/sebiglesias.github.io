@@ -545,6 +545,12 @@
   <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/ar-data-api/</loc>
+  <lastmod>2026-11-01T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.90</priority>
+</url>
 
 </urlset>
 
