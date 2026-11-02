@@ -241,6 +241,33 @@ A simple empanada/dumpling organizer for tracking what to order with friends.
 
 ---
 
+
+### Live Web Calculators, Microapps & Developer APIs (2026)
+
+- **Argentina Economic & Tax Data API**: https://sebiglesias.com.ar/ar-data-api/ — Live JSON REST API & OpenAPI 3.0 developer explorer for Argentine exchange rates (Blue, MEP, CCL, Official), Monotributo 2026 scales, BCRA fixed-term deposit TNAs, and INDEC CPI.
+- **Neapolitan Pizza Dough & Party Calculator**: https://sebiglesias.com.ar/pizza-calculator/ — Interactive baker's percentage dough calculator (AVPN Neapolitan, NY Style, Detroit, Roman) with room-temperature yeast fermentation curves and party box estimator.
+- **Barbell Plate & Warmup Calculator (Lbs & Kg)**: https://sebiglesias.com.ar/barbell-calculator/ — Visual gym barbell plate loader for standard 45 lb and 20 kg Olympic bars with color-coded plates, Epley/Brzycki 1RM estimator, and progressive warmup sets.
+- **3D Print Cost & Pricing Calculator (USD/EUR)**: https://sebiglesias.com.ar/3d-print-cost/ — Calculate filament material cost, printer electricity consumption, nozzle/machine wear depreciation, failure buffer, and commercial client markup for FDM & SLA 3D prints.
+- **Coffee Golden Ratio & Pour-Over Timer**: https://sebiglesias.com.ar/coffee-ratio/ — Specialty coffee golden ratio calculator (1:15 to 1:18) and bloom/pour stage timer for V60, Chemex, AeroPress, French Press, Cold Brew, and Espresso.
+- **Dog Age in Human Years & Calorie Calculator**: https://sebiglesias.com.ar/dog-age-calculator/ — Convert dog chronological age to human years using epigenetic logarithmic curves and size categories (Toy, Small, Medium, Large, Giant), plus daily RER/MER calorie needs.
+- **Freelance Hourly Rate & Project Pricing Calculator**: https://sebiglesias.com.ar/freelance-rate-calculator/ — Reverse-engineer your minimum billable hourly, daily, and project rate from target net income, self-employment tax, software overhead, PTO, and billable utilization %.
+- **BBQ Meat, Brisket & Cookout Calculator**: https://sebiglesias.com.ar/bbq-calculator/ — Estimate raw vs. cooked pounds of pulled pork, brisket, ribs, burgers, sausages, and sides per guest taking into account 35–40% smoking shrinkage.
+- **Drywall Sheet, Mud & Screw Estimator (US)**: https://sebiglesias.com.ar/drywall-calculator/ — Calculate 4x8, 4x10, and 4x12 gypsum drywall panels, metal/wood studs (16" or 24" OC), joint compound buckets, paper tape rolls, and drywall screws.
+- **Wedding & Open Bar Alcohol Calculator**: https://sebiglesias.com.ar/wedding-drink-calculator/ — Plan exact bottle, case, and keg counts for wedding receptions and open bars: wine, champagne toast, beer, liquor (750ml/1.75L), mixers, glassware, and ice.
+- **Tile Square Footage, Grout & Thinset Calculator**: https://sebiglesias.com.ar/tile-calculator/ — Compute square footage, tile box count, pattern waste (straight, subway brick, herringbone, diagonal), 50-lb thinset mortar bags by trowel notch size, and grout lbs.
+- **Auto Loan Early Payoff & Interest Savings Calculator**: https://sebiglesias.com.ar/car-payoff-calculator/ — Compare standard auto loan amortization against extra monthly principal payments, biweekly schedules, and lump-sum payoffs to see months shaved off and interest saved.
+- **Credit Card Debt Snowball vs. Avalanche Calculator**: https://sebiglesias.com.ar/credit-card-payoff/ — Eliminate high-APR credit card debt faster by comparing the Snowball (lowest balance first) and Avalanche (highest APR first) payoff strategies against 0% balance transfers.
+- **Insurance Deductible Break-Even Analyzer**: https://sebiglesias.com.ar/insurance-deductible/ — Analyze whether a $500, $1,000, or $2,500 auto/home insurance deductible saves you money based on annual premium savings, emergency fund cost, and claim probability.
+- **Rent vs. Buy Home Breakeven Calculator**: https://sebiglesias.com.ar/rent-vs-buy-calculator/ — Model the true net-worth crossover year between renting and buying a home, factoring mortgage rate, property tax, HOA, maintenance, closing costs, and S&P 500 opportunity cost.
+- **Concrete Cubic Yards & 60/80-lb Bag Calculator**: https://sebiglesias.com.ar/concrete-calculator/ — Calculate cubic yards, cubic feet, ready-mix truck loads, and 40/60/80-lb premix concrete bags for slabs, patios, footings, driveways, post holes, and stairs.
+- **Moving Truck Size (Cubic Feet) & Box Calculator**: https://sebiglesias.com.ar/moving-truck-calculator/ — Estimate total household cubic footage and weight to pick the right rental truck (10ft, 15ft, 20ft, 26ft box truck) and calculate moving boxes, tape, and packing paper.
+- **AC BTU, Mini-Split Tonnage & SEER2 Calculator**: https://sebiglesias.com.ar/ac-btu-calculator/ — Size window ACs, portable units, and ductless mini-splits in BTU/hr and refrigeration tons based on room dimensions, ceiling height, climate zone, sun exposure, and SEER2.
+- **Mulch, Topsoil & Gravel Cubic Yards Calculator**: https://sebiglesias.com.ar/mulch-calculator/ — Calculate bulk cubic yards, 2-cu-ft bags, and delivery weight in tons for bark mulch, topsoil, compost, pea gravel, and crushed river rock across garden beds.
+- **Salary to Hourly & W-2 vs. 1099 Paycheck Converter**: https://sebiglesias.com.ar/salary-to-hourly/ — Convert annual salary to hourly, daily, biweekly, and monthly paychecks, and compare W-2 employee compensation against 1099 independent contractor equivalent rates.
+- **Interior & Exterior Paint Gallon Calculator**: https://sebiglesias.com.ar/paint-calculator/ — Calculate exact gallons and quarts of wall paint, primer, and ceiling/trim paint after subtracting doors and windows, factoring surface porosity and number of coats.
+
+---
+
 ## Hobbies & Interests
 
 - **3D Printing:** Active creator on MakerWorld (@xebox)
