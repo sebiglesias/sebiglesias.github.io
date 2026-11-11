@@ -581,6 +581,36 @@
   <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/quini-6/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/cuando-cobro/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/calculadora-calorias/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/calculadora-ovulacion/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/dolar-mep/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.95</priority>
+</url>
 
 </urlset>
 
