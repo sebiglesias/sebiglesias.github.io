@@ -611,6 +611,36 @@
   <changefreq>daily</changefreq>
   <priority>0.95</priority>
 </url>
+<url>
+  <loc>https://sebiglesias.com.ar/tdee-calculator/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/ovulation-calculator/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/mortgage-extra-payment/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/cd-calculator/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://sebiglesias.com.ar/stripe-fee-calculator/</loc>
+  <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
 
 </urlset>
 
