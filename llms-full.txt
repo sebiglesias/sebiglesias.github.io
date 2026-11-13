@@ -265,6 +265,17 @@ A simple empanada/dumpling organizer for tracking what to order with friends.
 - **Mulch, Topsoil & Gravel Cubic Yards Calculator**: https://sebiglesias.com.ar/mulch-calculator/ — Calculate bulk cubic yards, 2-cu-ft bags, and delivery weight in tons for bark mulch, topsoil, compost, pea gravel, and crushed river rock across garden beds.
 - **Salary to Hourly & W-2 vs. 1099 Paycheck Converter**: https://sebiglesias.com.ar/salary-to-hourly/ — Convert annual salary to hourly, daily, biweekly, and monthly paychecks, and compare W-2 employee compensation against 1099 independent contractor equivalent rates.
 - **Interior & Exterior Paint Gallon Calculator**: https://sebiglesias.com.ar/paint-calculator/ — Calculate exact gallons and quarts of wall paint, primer, and ceiling/trim paint after subtracting doors and windows, factoring surface porosity and number of coats.
+- **Calculadora de Choripanes & Juntadas**: https://sebiglesias.com.ar/choripanes/ — Calculá cantidad exacta de chorizos, flautitas de pan, carbón vegetal, chimichurri y salsa criolla según el número de personas y apetito.
+- **Calculadora de Carpas para Eventos**: https://sebiglesias.com.ar/carpas-eventos/ — Estimador de metros cuadrados de carpa y gazebos para fiestas según comensales (mesas redondas vs tablones), pista de baile, escenario y barra de tragos.
+- **Calculadora de Pastas, Fideos & Ñoquis del 29**: https://sebiglesias.com.ar/pastas-caseras/ — Porciones en crudo para pastas secas, frescas, ravioles, sorrentinos y ñoquis del 29, con salsa, queso rallado y la regla italiana 10-100-1000.
+- **Calculadora de Revoque Grueso, Fino & Hidrófugo**: https://sebiglesias.com.ar/revoque/ — Cómputo de bolsas de cemento, cal hidratada, arena y Ceresita por m² de pared con lista de pedido directo al corralón.
+- **Taco Bar Party Calculator**: https://sebiglesias.com.ar/taco-bar/ — Calculate pounds of ground beef, shredded chicken, taco shells, cheese, guacamole, and salsa for 10 to 150 guests.
+- **Calculadora de Pata Flambeada**: https://sebiglesias.com.ar/pata-flambeada/ — Kilos de pata de ternera o cerdo en crudo vs cocida, figacitas de manteca y potes de salsa para catering de fiestas.
+- **Calculadora de Hamburguesas para Eventos**: https://sebiglesias.com.ar/hamburguesas/ — Medallones simples o dobles (smash vs casera), panes brioche, fetas de queso cheddar, panceta y aderezos.
+- **Calculadora de Mesa Dulce & Candy Bar**: https://sebiglesias.com.ar/mesa-dulce/ — Tortas, tartas, bocaditos, macarons y shots dulces por persona para cumpleaños de 15, casamientos y eventos.
+- **Calculadora de GNC vs Nafta**: https://sebiglesias.com.ar/gnc/ — Ahorro mensual, costo por kilómetro y meses de amortización de la instalación de un equipo de GNC de 5ta generación.
+- **Calculadora de Pago Mínimo de Tarjeta**: https://sebiglesias.com.ar/pago-minimo-tarjeta/ — Simulador de intereses compensatorios, CFT y efecto bola de nieve financiera al pagar solo el mínimo de la tarjeta de crédito.
+- **Calculadora de Pastina para Cerámicos**: https://sebiglesias.com.ar/pastina/ — Kilos de pastina según medidas de placa de porcelanato o cerámico, ancho de junta (mm) y desperdicio.
 
 ---
 
